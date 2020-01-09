@@ -1,0 +1,29 @@
+body {
+    background-color: rgb(133, 127, 116);
+}
+
+#header {
+    font-family: "Calibri";
+    text-align: center;
+}
+#ola {
+    font-size: 60px;
+}
+#alvinator {
+    font-size: 20px;
+    margin-top: -32px;
+}
+section {
+    text-align: center;
+    background-color: white;
+    padding: 10px;
+    width: 400px;
+    height: 200px;
+    margin: auto;
+    border-radius: 15px;
+    box-shadow: 0pt 0pt 0pt rgba(0, 0, 0, 0);
+    transition: 1.2s;
+}
+section:hover, section:focus {
+    box-shadow: 0pt 0pt 15pt rgba(0, 0, 0, 0.7);
+}
