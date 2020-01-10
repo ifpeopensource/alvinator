@@ -13,10 +13,11 @@ body {
     font-size: 20px;
     margin-top: -32px;
 }
-section {
+#bigContainer {
+    font-family: Arial, Helvetica, sans-serif;
     text-align: center;
     background-color: white;
-    padding: 10px;
+    padding: 50px;
     width: 400px;
     height: 200px;
     margin: auto;
@@ -24,6 +25,15 @@ section {
     box-shadow: 0pt 0pt 0pt rgba(0, 0, 0, 0);
     transition: 1.2s;
 }
-section:hover, section:focus {
-    box-shadow: 0pt 0pt 15pt rgba(0, 0, 0, 0.7);
+h3 {
+    margin-top: -20px;
+}
+#bigContainer:hover, #bigContainer:focus {
+    box-shadow: 0pt 0pt 15pt rgba(0, 0, 0, 0.6);
+}
+#addButton {
+    margin-left: -420px;
+    background-color: rgba(255, 255, 255, 1);
+    border: 0pt solid white;
+    padding: 5px;
 }
