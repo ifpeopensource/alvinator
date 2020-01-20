@@ -41,11 +41,18 @@ h3 {
     padding: 3px;
 }
 #inputCalculate {
-    background-color: rgb(21, 255, 99);
-    border: 1pt solid #FFF;
+    font-size: 30px;
     border-radius: 8px;
-    color: #FFF;
-    padding: 20px 150px;
+    padding: 18px 120px;
     margin-top: 15px;
+    transition: 0.8s;
+    background-color: rgb(255, 255, 255);
+    border: 1pt solid rgb(21, 255, 99);
+    color: rgb(21, 255, 99);
 }
-#input
+#inputCalculate:hover {
+    background-color: rgb(21, 255, 99);
+    border: 1pt solid rgb(21, 255, 99);
+    color: #FFF;
+    box-shadow: 1pt 1pt 10pt rgba(0, 0, 0, 0.35);
+}
