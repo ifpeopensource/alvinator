@@ -1,1 +1,1 @@
-let InputContainer = document.querySelector("section#addedMeasures")
+let InputContainer = document.querySelector("section#addMeasures")

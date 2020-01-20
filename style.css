@@ -33,11 +33,19 @@ h3 {
 }
 .inputs {
     padding: 4px;
-    margin-left: -150pt;
 }
 .measureTypes {
-    padding: 3px;
+    padding: 3px 10px;
 }
 .inputNumbers {
     padding: 3px;
 }
+#inputCalculate {
+    background-color: rgb(21, 255, 99);
+    border: 1pt solid #FFF;
+    border-radius: 8px;
+    color: #FFF;
+    padding: 20px 150px;
+    margin-top: 15px;
+}
+#input
