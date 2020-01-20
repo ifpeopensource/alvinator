@@ -25,15 +25,19 @@ body {
     box-shadow: 0pt 0pt 0pt rgba(0, 0, 0, 0);
     transition: 1.2s;
 }
-h3 {
-    margin-top: -20px;
-}
 #bigContainer:hover, #bigContainer:focus {
     box-shadow: 0pt 0pt 15pt rgba(0, 0, 0, 0.6);
 }
-#addButton {
-    margin-left: -420px;
-    background-color: rgba(255, 255, 255, 1);
-    border: 0pt solid white;
-    padding: 5px;
+h3 {
+    margin-top: -20px;
+}
+.inputs {
+    padding: 4px;
+    margin-left: -150pt;
+}
+.measureTypes {
+    padding: 3px;
+}
+.inputNumbers {
+    padding: 3px;
 }

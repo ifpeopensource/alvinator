@@ -7,7 +7,6 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Alvinator!</title>
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
 </head>
 
 <body>
@@ -15,11 +14,36 @@
         <h1 id="ola">Olá Jovem!</h1>
         <h2 id="alvinator">Este é o Alvinator!</h2>
     </header>
-    <section id = "bigContainer">
-        <section id = "addedMeasures">
-        <h3>Primeiro, insira os valores que você têm:</h3>
-        <select name="measureTypes" id="measureTypes" class = "measureTypes" onclick = "addMeasureTypes()" >
-        </select>
+    <section id="bigContainer">
+        <section id="addedMeasures">
+            <h3>Primeiro, insira os valores que você têm:</h3>
+
+            <div class = "inputs">
+                <select name="measureTypes" id="measureTypes" class="measureTypes">
+                    <option>a (Hipotenusa)</option>
+                    <option>b (Cateto b)</option>
+                    <option>c (Cateto c)</option>
+                    <option>p1 (Projeção 1)</option>
+                    <option>p2 (Projeção 2)</option>
+                    <option>h (Altura)</option>
+                    <option>A (Área)</option>
+                    <option>2p (Perímetro)</option>
+                </select>
+                <input type="number" name="inputNumberA" id="inputNumberA" class="inputNumbers">
+            </div>
+            <div class = "inputs">
+                <select name="measureTypes" id="measureTypes" class="measureTypes">
+                    <option>a (Hipotenusa)</option>
+                    <option>b (Cateto b)</option>
+                    <option>c (Cateto c)</option>
+                    <option>p1 (Projeção 1)</option>
+                    <option>p2 (Projeção 2)</option>
+                    <option>h (Altura)</option>
+                    <option>A (Área)</option>
+                    <option>2p (Perímetro)</option>
+                </select>
+                <input type="number" name="inputNumberA" id="inputNumberA" class="inputNumbers">
+            </div>
         </section>
     </section>
 
