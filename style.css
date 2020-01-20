@@ -1,10 +1,11 @@
 body {
-    background-color: rgb(133, 127, 116);
+    background-color: rgb(21, 255, 99);
 }
 
 #header {
     font-family: "Calibri";
     text-align: center;
+    color: #FFF;
 }
 #ola {
     font-size: 60px;
@@ -16,6 +17,7 @@ body {
 #bigContainer {
     font-family: Arial, Helvetica, sans-serif;
     text-align: center;
+    color: rgb(21, 255, 99);
     background-color: white;
     padding: 50px;
     width: 400px;
@@ -26,33 +28,44 @@ body {
     transition: 1.2s;
 }
 #bigContainer:hover, #bigContainer:focus {
-    box-shadow: 0pt 0pt 15pt rgba(0, 0, 0, 0.6);
+    box-shadow: 0pt 0pt 15pt rgba(0, 0, 0, 0.25);
 }
 h3 {
     margin-top: -20px;
+    color: rgb(16, 175, 69);
 }
 .inputs {
-    padding: 4px;
+    padding: 5px;
 }
-.measureTypes {
-    padding: 3px 10px;
-}
-.inputNumbers {
-    padding: 3px;
-}
+    .measureTypes {
+        padding: 6px 20px;
+        width: 170px;
+        border: 1pt solid rgb(16, 175, 69);
+        border-radius: 8px;
+        color: rgb(16, 175, 69);
+        font-weight: bolder;
+    }
+    .inputNumbers {
+        padding: 6px 18px;
+        border: 1pt solid rgb(16, 175, 69);
+        border-radius: 8px;
+        color: rgb(16, 175, 69);
+        font-weight: bold;
+    }
 #inputCalculate {
     font-size: 30px;
     border-radius: 8px;
-    padding: 18px 120px;
+    padding: 18px 130px;
     margin-top: 15px;
     transition: 0.8s;
     background-color: rgb(255, 255, 255);
-    border: 1pt solid rgb(21, 255, 99);
-    color: rgb(21, 255, 99);
+    border: 1.5pt solid rgb(16, 175, 69);
+    color: rgb(16, 175, 69);
 }
 #inputCalculate:hover {
-    background-color: rgb(21, 255, 99);
-    border: 1pt solid rgb(21, 255, 99);
+    background-color: rgb(16, 175, 69);
+    border: 1pt solid rgb(16, 175, 69);
     color: #FFF;
-    box-shadow: 1pt 1pt 10pt rgba(0, 0, 0, 0.35);
+    box-shadow: 1.5pt 1pt 10pt rgba(0, 0, 0, 0.35);
+    padding: 20px 135px;
 }
