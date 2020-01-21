@@ -1,5 +1,5 @@
 body {
-    background-color: rgb(21, 255, 99);
+    background-color: rgb(16, 175, 69);
 }
 
 #header {
@@ -19,7 +19,7 @@ body {
     text-align: center;
     color: rgb(21, 255, 99);
     background-color: white;
-    padding: 50px;
+    padding: 70px;
     width: 400px;
     height: 200px;
     margin: auto;
@@ -31,7 +31,7 @@ body {
     box-shadow: 0pt 0pt 15pt rgba(0, 0, 0, 0.25);
 }
 h3 {
-    margin-top: -20px;
+    margin-top: -18px;
     color: rgb(16, 175, 69);
 }
 .inputs {
@@ -40,14 +40,15 @@ h3 {
     .measureTypes {
         padding: 6px 20px;
         width: 170px;
-        border: 1pt solid rgb(16, 175, 69);
+        border: 1.5pt solid rgb(16, 175, 69);
         border-radius: 8px;
         color: rgb(16, 175, 69);
         font-weight: bolder;
+        margin: 5px 0px;
     }
     .inputNumbers {
         padding: 6px 18px;
-        border: 1pt solid rgb(16, 175, 69);
+        border: 1.5pt solid rgb(16, 175, 69);
         border-radius: 8px;
         color: rgb(16, 175, 69);
         font-weight: bold;
