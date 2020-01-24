@@ -1,8 +1,12 @@
+import { pitag } from "./mathFunctions.js"
+
 let selectMeasure1 = document.getElementById("measureTypes1")
 let selectMeasure2 = document.getElementById("measureTypes2")
 let inputMeasure1 = document.getElementById("inputMeasure1")
+let inputMeasure2 = document.getElementById("inputMeasure2")
+
 var measureType1 = ""
-    var measureType2 = ""
+var measureType2 = ""
 
 function identifySelect() { //A function to transform index of the select measure into more human-friendly variables
 
@@ -66,11 +70,16 @@ function identifySelect() { //A function to transform index of the select measur
     console.log(measureType1, measureType2)
 }
 function mainDecisions() {
-    if ((measureType1 == measureType2)) {
-        window.alert("Coloque algo direito nesta porra jovem!")
+    let measure1 = Number(inputMeasure1.value)
+    let measure2 = Number(inputMeasure2.value) 
+
+    if ((measureType1 == measureType2) || (measure1 == 0 || measure2 == 0)) { // Checagem inicial dos dados
+        window.alert("Coloque algo direito nesta merda jovem!")
     }
     else {
-        
+        if (measureType1 == "a" && measureType2 == "b") {
+            console.log(lib.pitag(measure1, measure2, 0))
+        }
     }
 }
 

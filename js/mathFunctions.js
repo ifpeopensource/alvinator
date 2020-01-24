@@ -46,4 +46,4 @@ function pitag(a, b, c) {
         return 'PENSE JOVEM! Dados insuficientes'
     }
 }
-console.log(pitag(2,0,0))
+export default pitag()
