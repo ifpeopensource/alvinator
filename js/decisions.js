@@ -1,61 +1,80 @@
 let selectMeasure1 = document.getElementById("measureTypes1")
 let selectMeasure2 = document.getElementById("measureTypes2")
+let inputMeasure1 = document.getElementById("inputMeasure1")
+var measureType1 = ""
+    var measureType2 = ""
 
-function identifySelect() { //A function to transform index of teh select box into more human-friendly variables
-    let measure1 = ""
-    let measure2 = ""
+function identifySelect() { //A function to transform index of the select measure into more human-friendly variables
 
     switch (selectMeasure1.selectedIndex) {
         case 0:
-            measure1 = "a"
+            measureType1 = "a"
             break
         case 1:
-            measure1 = "b"
+            measureType1 = "b"
             break
         case 2:
-            measure1 = "c"
+            measureType1 = "c"
             break
         case 3:
-            measure1 = "p1"
+            measureType1 = "p1"
             break
         case 4:
-            measure1 = "p2"
+            measureType1 = "p2"
             break
         case 5:
-            measure1 = "h"
+            measureType1 = "h"
             break
         case 6:
-            measure1 = "A"
-            break 
+            measureType1 = "A"
+            break
         case 7:
-            measure1 = "2p"
+            measureType1 = "2p"
+            break
+        default:
+            alert("Erro! Existe algo de errado jovem!")
     }
 
     switch (selectMeasure2.selectedIndex) {
         case 0:
-            measure2 = "a"
+            measureType2 = "a"
             break
         case 1:
-            measure2 = "b"
+            measureType2 = "b"
             break
         case 2:
-            measure2 = "c"
+            measureType2 = "c"
             break
         case 3:
-            measure2 = "p1"
+            measureType2 = "p1"
             break
         case 4:
-            measure2 = "p2"
+            measureType2 = "p2"
             break
         case 5:
-            measure2 = "h"
+            measureType2 = "h"
             break
         case 6:
-            measure2 = "A"
-            break 
+            measureType2 = "A"
+            break
         case 7:
-            measure2 = "2p"
+            measureType2 = "2p"
+            break
+        default:
+            alert("Erro! Existe algo de errado jovem!")
     }
-    console.log(measure1,measure2)
+    console.log(measureType1, measureType2)
+}
+function mainDecisions() {
+    if ((measureType1 == measureType2)) {
+        window.alert("Coloque algo direito nesta porra jovem!")
+    }
+    else {
+        
+    }
+}
 
+function main() {
+    identifySelect()
+    mainDecisions()
 }
