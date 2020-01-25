@@ -3,7 +3,7 @@
 // Let's go!
 
 // NORMAL PYTHAGORAS
-function pitag(a, b, c) {
+export default function pitag(a, b, c) {
     // a**2 = b**2 + c**2 --> The pythagoream theorem
     
     if (a == 0 && b > 0 && c > 0) { // Those first-level "if's" recognize the input of the user
@@ -46,4 +46,3 @@ function pitag(a, b, c) {
         return 'PENSE JOVEM! Dados insuficientes'
     }
 }
-export default pitag()
