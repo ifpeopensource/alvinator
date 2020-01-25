@@ -54,13 +54,14 @@ h3 {
         font-weight: bold;
     }
 #inputCalculate {
+    font-weight: bolder;
     font-size: 30px;
     border-radius: 8px;
     padding: 18px 130px;
     margin-top: 15px;
     transition: 0.8s;
     background-color: rgb(255, 255, 255);
-    border: 1.5pt solid rgb(16, 175, 69);
+    border: 2pt solid rgb(16, 175, 69);
     color: rgb(16, 175, 69);
 }
 #inputCalculate:hover {
