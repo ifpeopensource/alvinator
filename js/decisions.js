@@ -82,21 +82,23 @@ export default function decisions() {
         }
         else { // Sorry for so many "if's", unfortunately, it's not an AI ;-;
         //Normal Pythagoras block (a,b,c)
+            if (measureType1 == "b" && measureType2 == "c") {
+                console.log(pitag(0, measure1, measure2))
+            } else if (measureType1 == "c" && measureType2 == "b") {
+                console.log(pitag(0, measure2, measure1))
+            }
+            
             if (measureType1 == "a" && measureType2 == "b") {
                 console.log(pitag(measure1, measure2, 0))
-            }
-            else if (measureType1 == "b" && measureType2 == "a") {
+            } else if (measureType1 == "b" && measureType2 == "a") {
                 console.log(pitag(measure2, measure1, 0))
             }
 
             if (measureType1 == "a" && measureType2 == "c") {
                 console.log(pitag(measure1, 0, measure2))
-            }
-            else if (measureType1 == "c" && measureType2 == "a") {
+            } else if (measureType1 == "c" && measureType2 == "a") {
                 console.log(pitag(measure2, 0, measure1))
             }
-
-            
 
         }
     }
