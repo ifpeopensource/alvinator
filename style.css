@@ -50,6 +50,7 @@ h3 {
         border: 1.5pt solid rgb(16, 175, 69);
         border-radius: 8px;
         color: rgb(16, 175, 69);
+        background-color: #FFF;
         font-weight: bolder;
         margin: 5px 0px;
     }
