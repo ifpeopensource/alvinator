@@ -9,6 +9,17 @@ let inputMeasure2 = document.getElementById("inputMeasure2")
 var measureType1 = ""
 var measureType2 = ""
 
+var results = {
+    a: 0,
+    b: 0,
+    c: 0,
+    p1: 0,
+    p2: 0,
+    h: 0,
+    area: 0,
+    per: 0,
+}
+
 
 export default function decisions() {
     
@@ -74,6 +85,7 @@ export default function decisions() {
         console.log(measureType1, measureType2)
     }
     function mainDecisions() {
+        identifySelect() 
         let measure1 = Number(inputMeasure1.value)
         let measure2 = Number(inputMeasure2.value)
 
@@ -83,24 +95,39 @@ export default function decisions() {
         else { // Sorry for so many "if's", unfortunately, it's not an AI ;-;
         //Normal Pythagoras block (a,b,c)
             if (measureType1 == "b" && measureType2 == "c") {
-                var a = pitag(0, measure1, measure2)
+                results.a = pitag(0, measure1, measure2)
+                results.per =results.a + measure1 + measure2
+
+                console.log(a)
             } else if (measureType1 == "c" && measureType2 == "b") {
-                var a = pitag(0, measure2, measure1)
+                results.a = pitag(0, measure2, measure1)
+                results.per = results.a + measure1 + measure2
+
+                console.log(results)
             }
             
             if (measureType1 == "a" && measureType2 == "b") {
-                var c = pitag(measure1, measure2, 0)
+                results.c = pitag(measure1, measure2, 0)
+                results.per = results.c + measure1 + measure2
+
+                console.log(results)
             } else if (measureType1 == "b" && measureType2 == "a") {
-                var c = pitag(measure2, measure1, 0)
+                results.c = pitag(measure2, measure1, 0)
+                results.per = results.c + measure1 + measure2
+
+                console.log(results)
             }
 
             if (measureType1 == "a" && measureType2 == "c") {
-                var b = pitag(measure1, 0, measure2)
+                results.b = pitag(measure1, 0, measure2)
+                results.per = results.b + measure1 + measure2
+                console.log(results)
             } else if (measureType1 == "c" && measureType2 == "a") {
-                var b = pitag(measure2, 0, measure1)
+                results.b = pitag(measure2, 0, measure1)
+                results.per = results.b + measure1 + measure2
+                console.log(results)
             }
         }
     }
-    identifySelect() 
     mainDecisions()
 }
