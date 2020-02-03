@@ -37,7 +37,7 @@ export default function pitag(a, b, c) {
             return cSolved
         }
         if (cSolved == 0) {
-            return `O resultado foi ${cSolved}, Jovem, isto está altamente errado!`
+            return `O resultado do Cateto C foi ${cSolved}, Jovem, isto está altamente errado!`
         }
         if ((a ** 2 - b ** 2) < 0) {
             return `O resultado foi ${a ** 2 - b ** 2}, Jovem, isto está altamente errado!`
