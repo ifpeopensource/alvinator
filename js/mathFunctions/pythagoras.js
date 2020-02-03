@@ -1,8 +1,3 @@
-// All the functions works as equations that we use in the problem solving with right triangles
-// Probably (I can't predict the future), in most cases, each function represents one equation, but sometimes a function is just another form of that same equation
-// Let's go!
-
-// NORMAL PYTHAGORAS
 export default function pitag(a, b, c) {
     // a**2 = b**2 + c**2 --> The pythagoream theorem
     
@@ -17,7 +12,7 @@ export default function pitag(a, b, c) {
         }
         if ((b ** 2 + c ** 2) < 0) { // In case of the value being negative
             return `O resultado foi ${b ** 2 + c ** 2}! Jovem, isto está altamente errado!`
-        } // The subsequent functions work on the same way
+        } // The subsequent "if's" work in the same way
     } if (a > 0 && b == 0 && c > 0) { 
         var bSolved = Math.sqrt(a ** 2 - c ** 2)
 
@@ -42,7 +37,5 @@ export default function pitag(a, b, c) {
         if ((a ** 2 - b ** 2) < 0) {
             return `O resultado foi ${a ** 2 - b ** 2}, Jovem, isto está altamente errado!`
         }
-    } if ((a == 0 && b == 0) || (b == 0 && c == 0) || (a == 0 && c == 0) || (a == 0 && b == 0 && c == 0)) { // This one identifies if it has just one input
-        return 'PENSE JOVEM! Dados insuficientes'
     }
 }

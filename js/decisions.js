@@ -10,7 +10,16 @@ let inputMeasure2 = document.getElementById("inputMeasure2")
 var measureType1 = ""
 var measureType2 = ""
 
-var results = {}
+var results = {
+    a: 0,
+    b: 0,
+    c: 0,
+    p1: 0,
+    p2: 0,
+    h: 0,
+    area: 0,
+    per: 0,
+}
 
 
 export default function decisions() {
@@ -94,11 +103,12 @@ export default function decisions() {
     }
     function mainDecisions() {
         identifySelect() 
-
+        
         if ((measureType1 == measureType2) || (Number(inputMeasure1.value) == 0 || Number(inputMeasure1.value) == 0)) { // Checagem inicial dos dados
             window.alert("Coloque algo direito nesta merda jovem!")
         }
         else { // Sorry for so many "if's", unfortunately, it's not an AI ;-;
+        
         //Normal Pythagoras block (a,b,c)
             if ((measureType1 == "b" && measureType2 == "c") || (measureType1 == "c" && measureType2 == "b")) {
                 results.a = pitag(0, results.b, results.c)
