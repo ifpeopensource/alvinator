@@ -1,0 +1,92 @@
+$mainColor : rgb(16, 175, 69);
+
+.github-corner {
+    fill:#fff; 
+    color: $mainColor;
+}
+body {
+    background-color: rgb(16, 175, 69);
+}
+#header {
+    font-family: 'Muli', sans-serif;
+    font-style: italic;
+    text-align: center;
+    color: #FFF;
+}
+#ola {
+    font-size: 60px;
+}
+#alvinator {
+    font-size: 20px;
+    margin-top: -32px;
+}
+footer {
+    font-family: 'Muli', sans-serif;
+    font-style: italic;
+    color: #FFF;
+    position: absolute;
+    bottom: 10px;
+    font-size: 14px;
+}
+#bigContainer {
+    font-family: 'Muli', sans-serif;
+    text-align: center;
+    color: rgb(21, 255, 99);
+    background-color: white;
+    padding: 70px;
+    width: 400px;
+    height: 200px;
+    margin: auto;
+    border-radius: 15px;
+    box-shadow: 0pt 0pt 0pt rgba(0, 0, 0, 0);
+    transition: 1.2s;
+}
+#bigContainer:hover, #bigContainer:focus {
+    box-shadow: 0pt 0pt 15pt rgba(0, 0, 0, 0.25);
+}
+h3 {
+    margin-top: -18px;
+    color: rgb(16, 175, 69);
+}
+.inputs {
+    padding: 4.5px;
+}
+    .measureTypes {
+        padding: 6px 20px;
+        width: 170px;
+        border: 1.5pt solid rgb(16, 175, 69);
+        border-radius: 8px;
+        color: rgb(16, 175, 69);
+        background-color: #FFF;
+        font-weight: bolder;
+        font-family: 'Muli', sans-serif;
+        margin: 5px 0px;
+    }
+    .inputNumbers {
+        padding: 6px 18px;
+        border: 1.5pt solid rgb(16, 175, 69);
+        border-radius: 8px;
+        color: rgb(16, 175, 69);
+        font-weight: bold;
+        font-family: 'Muli', sans-serif;
+    }
+#inputCalculate {
+    font-weight: bolder;
+    font-size: 30px;
+    font-family: 'Muli', sans-serif;
+    border-radius: 8px;
+    padding: 18px 130px;
+    margin-top: 15px;
+    transition: 0.8s;
+    background-color: rgb(255, 255, 255);
+    border: 1.5pt solid rgb(16, 175, 69);
+    color: rgb(16, 175, 69);
+    cursor: pointer;
+}
+#inputCalculate:hover {
+    background-color: rgb(16, 175, 69);
+    border: 1pt solid rgb(16, 175, 69);
+    color: #FFF;
+    box-shadow: 1.5pt 1pt 10pt rgba(0, 0, 0, 0.35);
+    padding: 22px 130px;
+}
