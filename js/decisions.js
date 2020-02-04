@@ -102,8 +102,9 @@ export default function decisions() {
         console.log(measureType1, measureType2)
     }
     function mainDecisions() {
+
         identifySelect() 
-        
+
         if ((measureType1 == measureType2) || (Number(inputMeasure1.value) == 0 || Number(inputMeasure1.value) == 0)) { // Checagem inicial dos dados
             window.alert("Coloque algo direito nesta merda jovem!")
         }
@@ -112,17 +113,14 @@ export default function decisions() {
         //Normal Pythagoras block (a,b,c)
             if ((measureType1 == "b" && measureType2 == "c") || (measureType1 == "c" && measureType2 == "b")) {
                 results.a = pitag(0, results.b, results.c)
-
             } if ((measureType1 == "a" && measureType2 == "b") || (measureType1 == "b" && measureType2 == "a")) {
                 results.c = pitag(results.a, results.b, 0)
-
             } if ((measureType1 == "a" && measureType2 == "c") || (measureType1 == "c" && measureType2 == "a")) {
                 results.b = pitag(results.a, 0, results.c)
-
             }
 
             results.per = results.a + results.b + results.c
-            results.area = area(results.c, results.b)
+            results.area = area(results.c, results.b, 0)
             console.log(results)
         }
     }
