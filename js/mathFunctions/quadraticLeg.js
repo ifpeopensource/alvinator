@@ -2,28 +2,28 @@ export default function quadraticLeg (p, a, c) { // Function to calculate the Le
     // Leg of an right triangle: c1² = p1 * a  OR
     //                           c2² = p2 * a
     if (p > 0 && a > 0 && c == 0) {
-        let c = Math.sqrt(p * a)
+        let cSolved = Math.sqrt(p * a)
 
-        if (c > 0) {
-            return c
-        } if (c == 0) { 
-            return `O resultado do Cateto C foi ${c}, verifique seus dados Jovem!`
+        if (cSolved > 0) {
+            return cSolved
+        } if (cSolved == 0) { 
+            return `O resultado do Cateto C foi ${cSolved}, verifique seus dados Jovem!`
         }
     } if (p > 0 && a == 0 && c > 0) {
-        let a = (c ** 2) / p
+        let aSolved = (c ** 2) / p
 
-        if (a > 0) {
-            return a
-        } if (a == 0) { 
-            return `O resultado da Hipotenusa foi ${a}, verifique seus dados Jovem!`
+        if (aSolved > 0) {
+            return aSolved
+        } if (aSolved == 0) { 
+            return `O resultado da Hipotenusa foi ${aSolved}, verifique seus dados Jovem!`
         }
     } if (p == 0 && a > 0 && c > 0) {
-        let p = (c ** 2) / a
+        let pSolved = (c ** 2) / a
         
-        if (p > 0) {
-            return p
-        } if (p == 0) { 
-            return `O resultado da Projeção foi ${p}, verifique seus dados Jovem!`
+        if (pSolved > 0) {
+            return pSolved
+        } if (pSolved == 0) { 
+            return `O resultado da Projeção foi ${pSolved}, verifique seus dados Jovem!`
         }
     }
 

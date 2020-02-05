@@ -1,13 +1,14 @@
 import pitag from './mathFunctions/pythagoras.js'
 import area from './mathFunctions/area.js'
 import quadraticLeg from './mathFunctions/quadraticLeg.js'
+import quadraticHeight from './mathFunctions/quadraticHeight.js'
 
 
 let selectMeasure1 = document.getElementById("measureTypes1")
 let selectMeasure2 = document.getElementById("measureTypes2")
 let inputMeasure1 = document.getElementById("inputMeasure1")
 let inputMeasure2 = document.getElementById("inputMeasure2")
- 
+
 
 var measureType1 = ""
 var measureType2 = ""
@@ -25,7 +26,7 @@ var results = {
 
 
 export default function decisions() {
-    
+
     function identifySelect() { //A function to transform index of the select measure into more human-friendly variables
 
         switch (selectMeasure1.selectedIndex) {
@@ -44,7 +45,7 @@ export default function decisions() {
                 break
             case 4:
                 measureType1 = "p1"
-                results.p1 = Number(inputMeasure1.value) 
+                results.p1 = Number(inputMeasure1.value)
                 break
             case 5:
                 measureType1 = "p2"
@@ -56,7 +57,7 @@ export default function decisions() {
                 break
             case 7:
                 measureType1 = "area"
-                results.area = Number(inputMeasure1.value) 
+                results.area = Number(inputMeasure1.value)
                 break
             case 8:
                 measureType1 = "per"
@@ -69,7 +70,7 @@ export default function decisions() {
         switch (selectMeasure2.selectedIndex) {
             case 1:
                 measureType2 = "a"
-                results.a = Number(inputMeasure2.value) 
+                results.a = Number(inputMeasure2.value)
                 break
             case 2:
                 measureType2 = "b"
@@ -85,7 +86,7 @@ export default function decisions() {
                 break
             case 5:
                 measureType2 = "p2"
-                results.p2 = Number(inputMeasure2.value) 
+                results.p2 = Number(inputMeasure2.value)
                 break
             case 6:
                 measureType2 = "h"
@@ -106,29 +107,37 @@ export default function decisions() {
     }
     function mainDecisions() {
 
-        identifySelect() 
+        identifySelect()
 
         if ((measureType1 == measureType2) || (Number(inputMeasure1.value) == 0 || Number(inputMeasure1.value) == 0)) { // Checagem inicial dos dados
             window.alert("Coloque algo direito nesta merda jovem!")
         }
         else { // Sorry for so many "if's", unfortunately, it's not an AI ;-;
-        
-        //Normal Pythagoras block (a,b,c)
+
+            //Normal Pythagoras block (a,b,c)
             if ((measureType1 == "b" && measureType2 == "c") || (measureType1 == "c" && measureType2 == "b")) {
                 results.a = pitag(0, results.b, results.c)
+                results.p1 = quadraticLeg(0, results.a, results.c)
+                results.p2 = quadraticLeg(0, results.a, results.b)
+                results.h = quadraticHeight(results.p1, results.p2, 0)
+                results.per = results.a + results.b + results.c
+                results.area = area(results.c, results.b, 0)
             } if ((measureType1 == "a" && measureType2 == "b") || (measureType1 == "b" && measureType2 == "a")) {
                 results.c = pitag(results.a, results.b, 0)
+                results.p1 = quadraticLeg(0, results.a, results.c)
+                results.p2 = quadraticLeg(0, results.a, results.b)
+                results.h = quadraticHeight(results.p1, results.p2, 0)
+                results.per = results.a + results.b + results.c
+                results.area = area(results.c, results.b, 0)
             } if ((measureType1 == "a" && measureType2 == "c") || (measureType1 == "c" && measureType2 == "a")) {
                 results.b = pitag(results.a, 0, results.c)
+                results.p1 = quadraticLeg(0, results.a, results.c)
+                results.p2 = quadraticLeg(0, results.a, results.b)
+                results.h = quadraticHeight(results.p1, results.p2, 0)
+                results.per = results.a + results.b + results.c
+                results.area = area(results.c, results.b, 0)
             }
 
-            results.p1 = quadraticLeg(0, results.a, results.c)
-            results.p2 = quadraticLeg(0, results.a, results.b)
-
-            
-
-            results.per = results.a + results.b + results.c
-            results.area = area(results.c, results.b, 0)
             console.log(results)
         }
     }
