@@ -1,5 +1,7 @@
 import pitag from './mathFunctions/pythagoras.js'
 import area from './mathFunctions/area.js'
+import quadraticLeg from './mathFunctions/quadraticLeg.js'
+
 
 let selectMeasure1 = document.getElementById("measureTypes1")
 let selectMeasure2 = document.getElementById("measureTypes2")
@@ -119,6 +121,11 @@ export default function decisions() {
             } if ((measureType1 == "a" && measureType2 == "c") || (measureType1 == "c" && measureType2 == "a")) {
                 results.b = pitag(results.a, 0, results.c)
             }
+
+            results.p1 = quadraticLeg(0, results.a, results.c)
+            results.p2 = quadraticLeg(0, results.a, results.b)
+
+            
 
             results.per = results.a + results.b + results.c
             results.area = area(results.c, results.b, 0)

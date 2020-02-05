@@ -1,5 +1,6 @@
-export default function area(b,c,ar) { // Simple function to calculate the area and others values of the right triangle 
-    // Area of the right triangle: A = (b * c) / 2
+export default function area1(b,c,ar) { // Simple function to calculate the area and others values of the right triangle 
+    // Area of the right triangle: A = (b * c) / 2  OR
+    //                             A = (a * h) / 2
     if (b > 0 && c > 0 && ar == 0) {
         ar = (c*b) / 2
         
