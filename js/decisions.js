@@ -114,7 +114,7 @@ export default function decisions() {
         }
         else { // Sorry for so many "if's", unfortunately, it's not an AI ;-;
 
-            //Normal Pythagoras block (a,b,c)
+            //Normal Pythagoras block (a,b,c possible combinations)
             if ((measureType1 == "b" && measureType2 == "c") || (measureType1 == "c" && measureType2 == "b")) {
                 results.a = pitag(0, results.b, results.c)
                 results.p1 = quadraticLeg(0, results.a, results.c)
