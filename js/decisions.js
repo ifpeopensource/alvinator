@@ -137,7 +137,7 @@ export default function decisions() {
                 results.per = results.a + results.b + results.c
                 results.area = area(results.c, results.b, 0)
             }
-            // Normal hypotenuse and projections (p1, p2, a all possible combinations)
+            // Normal hypotenuse and projections (p1, p2, a possible combinations)
             if ((measureType1 == "p1" && measureType2 == "p2") || (measureType1 == "p2" & measureType2 == "p1")) {
                 results.a = results.p1 + results.p2
                 results.c = quadraticLeg(results.p2, results.a, 0)
@@ -159,6 +159,22 @@ export default function decisions() {
                 results.h = quadraticHeight(results.p1, results.p2, 0)
                 results.per = results.a + results.b + results.c
                 results.area = area(results.c, results.b, 0)
+            }
+            // Normal height and projections (p1, p2, h possible combinations)
+            if ((measureType1 == "h" && measureType2 == "p1") || (measureType1 == "p1" & measureType2 == "h")) {
+                results.p2 = quadraticHeight(results.p1, 0, results.h)
+                results.a = results.p1 + results.p2
+                results.c = quadraticLeg(results.p2, results.a, 0)
+                results.b = quadraticLeg(results.p1, results.a, 0)
+                results.per = results.a + results.b + results.c
+                results.area = area (results.c, results.b, 0)
+            } if ((measureType1 == "h" && measureType2 == "p2") || (measureType1 == "p2" & measureType2 == "h")) {
+                results.p1 = quadraticHeight(0, results.p2, results.h)
+                results.a = results.p1 + results.p2
+                results.c = quadraticLeg(results.p2, results.a, 0)
+                results.b = quadraticLeg(results.p1, results.a, 0)
+                results.per = results.a + results.b + results.c
+                results.area = area (results.c, results.b, 0)
             }
 
             console.log(results)
