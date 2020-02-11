@@ -171,7 +171,11 @@ export default function decisions() {
                 results.b = pythagoras(results.a, 0, results.c)
                 results.p1 = results.a - results.p2
                 results.h = quadraticHeight(results.p1, results.p2, 0)
+            } if ((measureType1 == "a" && measureType2 == "h") || (measureType1 == "h" & measureType2 == "a")) {
+                window.alert("Jovem, ainda não sabemos a resposta para essa questão... (ERRO a/h)")
             }
+
+
             results.area = area(results.b, results.c, 0)
             results.per = results.a + results.b + results.c
             console.log(results)
