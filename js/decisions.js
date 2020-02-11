@@ -1,4 +1,4 @@
-import pitag from './mathFunctions/pythagoras.js'
+import pythagoras from './mathFunctions/pythagoras.js'
 import area from './mathFunctions/area.js'
 import quadraticLeg from './mathFunctions/quadraticLeg.js'
 import quadraticHeight from './mathFunctions/quadraticHeight.js'
@@ -116,49 +116,37 @@ export default function decisions() {
 
             //Normal Pythagoras block (a,b,c possible combinations)
             if ((measureType1 == "b" && measureType2 == "c") || (measureType1 == "c" && measureType2 == "b")) {
-                results.a = pitag(0, results.b, results.c)
+                results.a = pythagoras(0, results.b, results.c)
                 results.p1 = quadraticLeg(0, results.a, results.c)
                 results.p2 = quadraticLeg(0, results.a, results.b)
                 results.h = quadraticHeight(results.p1, results.p2, 0)
-                results.per = results.a + results.b + results.c
-                results.area = area(results.c, results.b, 0)
             } if ((measureType1 == "a" && measureType2 == "b") || (measureType1 == "b" && measureType2 == "a")) {
-                results.c = pitag(results.a, results.b, 0)
+                results.c = pythagoras(results.a, results.b, 0)
                 results.p1 = quadraticLeg(0, results.a, results.c)
                 results.p2 = quadraticLeg(0, results.a, results.b)
                 results.h = quadraticHeight(results.p1, results.p2, 0)
-                results.per = results.a + results.b + results.c
-                results.area = area(results.c, results.b, 0)
             } if ((measureType1 == "a" && measureType2 == "c") || (measureType1 == "c" && measureType2 == "a")) {
-                results.b = pitag(results.a, 0, results.c)
+                results.b = pythagoras(results.a, 0, results.c)
                 results.p1 = quadraticLeg(0, results.a, results.c)
                 results.p2 = quadraticLeg(0, results.a, results.b)
                 results.h = quadraticHeight(results.p1, results.p2, 0)
-                results.per = results.a + results.b + results.c
-                results.area = area(results.c, results.b, 0)
             }
             // Normal hypotenuse and projections (p1, p2, a possible combinations)
             if ((measureType1 == "p1" && measureType2 == "p2") || (measureType1 == "p2" & measureType2 == "p1")) {
                 results.a = results.p1 + results.p2
                 results.c = quadraticLeg(results.p2, results.a, 0)
                 results.b = quadraticLeg(results.p1, results.a, 0)
-                results.h = quadraticHeight(results.p1, results.p2, 0)
-                results.per = results.a + results.b +results.c
-                results.area = area(results.c, results.b, 0)
+                results.h = quadraticHeight(results.p1, results.p2, 0).area = area(results.c, results.b, 0)
             } if ((measureType1 == "a" && measureType2 == "p1") || (measureType1 == "p1" & measureType2 == "a")) {
                 results.p2 = results.a - results.p1
                 results.c = quadraticLeg(results.p2, results.a, 0)
                 results.b = quadraticLeg(results.p1, results.a, 0)
-                results.h = quadraticHeight(results.p1, results.p2, 0)
-                results.per = results.a + results.b +results.c
-                results.area = area(results.c, results.b, 0)
+                results.h = quadraticHeight(results.p1, results.p2, 0).area = area(results.c, results.b, 0)
             } if ((measureType1 == "a" && measureType2 == "p2") || (measureType1 == "p2" & measureType2 == "a")) {
                 results.p1 = results.a - results.p2
                 results.c = quadraticLeg(results.p2, results.a, 0)
                 results.b = quadraticLeg(results.p1, results.a, 0)
                 results.h = quadraticHeight(results.p1, results.p2, 0)
-                results.per = results.a + results.b + results.c
-                results.area = area(results.c, results.b, 0)
             }
             // Normal height and projections (p1, p2, h possible combinations)
             if ((measureType1 == "h" && measureType2 == "p1") || (measureType1 == "p1" & measureType2 == "h")) {
@@ -166,17 +154,26 @@ export default function decisions() {
                 results.a = results.p1 + results.p2
                 results.c = quadraticLeg(results.p2, results.a, 0)
                 results.b = quadraticLeg(results.p1, results.a, 0)
-                results.per = results.a + results.b + results.c
-                results.area = area (results.c, results.b, 0)
             } if ((measureType1 == "h" && measureType2 == "p2") || (measureType1 == "p2" & measureType2 == "h")) {
                 results.p1 = quadraticHeight(0, results.p2, results.h)
                 results.a = results.p1 + results.p2
                 results.c = quadraticLeg(results.p2, results.a, 0)
                 results.b = quadraticLeg(results.p1, results.a, 0)
-                results.per = results.a + results.b + results.c
-                results.area = area (results.c, results.b, 0)
             }
-
+            // a + all options possible combinations
+            if ((measureType1 == "a" && measureType2 == "p1") || (measureType1 == "p1" & measureType2 == "a")) {
+                results.b = quadraticLeg(results.p1, results.a, 0)
+                results.c = pythagoras(results.a, results.b, 0)
+                results.p2 = results.a - results.p1
+                results.h = quadraticHeight(results.p1, results.p2, 0)
+            } if ((measureType1 == "a" && measureType2 == "p2") || (measureType1 == "p2" & measureType2 == "a")) {
+                results.c = quadraticLeg(results.p2, results.a, 0)
+                results.b = pythagoras(results.a, 0, results.c)
+                results.p1 = results.a - results.p2
+                results.h = quadraticHeight(results.p1, results.p2, 0)
+            }
+            results.area = area(results.b, results.c, 0)
+            results.per = results.a + results.b + results.c
             console.log(results)
         }
     }
