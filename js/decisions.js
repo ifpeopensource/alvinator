@@ -172,7 +172,11 @@ export default function decisions() {
                 results.p1 = results.a - results.p2
                 results.h = quadraticHeight(results.p1, results.p2, 0)
             } if ((measureType1 == "a" && measureType2 == "h") || (measureType1 == "h" & measureType2 == "a")) {
-                window.alert("Jovem, ainda não sabemos a resposta para essa questão... (ERRO a/h)")
+                window.alert("Jovem, ainda não sabemos a resposta para essa questão... (ERRO a/h)") // TODO: Mensagens de erro e sugestões de resposta
+            } if ((measureType1 == "a" && measureType2 == "area") || (measureType1 == "area" & measureType2 == "a")) {
+                // TODO
+            } if ((measureType1 == "a" && measureType2 == "per") || (measureType1 == "per" & measureType2 == "a")) {
+                // TODO
             }
 
 
