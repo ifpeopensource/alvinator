@@ -132,66 +132,82 @@ export default function decisions() {
                 results.h = quadraticHeight(results.p1, results.p2, 0)
             }
             // Normal hypotenuse and projections (p1, p2, a possible combinations)
-            if ((measureType1 == "p1" && measureType2 == "p2") || (measureType1 == "p2" & measureType2 == "p1")) {
+            if ((measureType1 == "p1" && measureType2 == "p2") || (measureType1 == "p2" && measureType2 == "p1")) {
                 results.a = results.p1 + results.p2
                 results.c = quadraticLeg(results.p2, results.a, 0)
                 results.b = quadraticLeg(results.p1, results.a, 0)
                 results.h = quadraticHeight(results.p1, results.p2, 0)
-            } if ((measureType1 == "a" && measureType2 == "p1") || (measureType1 == "p1" & measureType2 == "a")) {
+            } if ((measureType1 == "a" && measureType2 == "p1") || (measureType1 == "p1" && measureType2 == "a")) {
                 results.p2 = results.a - results.p1
                 results.c = quadraticLeg(results.p2, results.a, 0)
                 results.b = quadraticLeg(results.p1, results.a, 0)
                 results.h = quadraticHeight(results.p1, results.p2, 0)
-            } if ((measureType1 == "a" && measureType2 == "p2") || (measureType1 == "p2" & measureType2 == "a")) {
+            } if ((measureType1 == "a" && measureType2 == "p2") || (measureType1 == "p2" && measureType2 == "a")) {
                 results.p1 = results.a - results.p2
                 results.c = quadraticLeg(results.p2, results.a, 0)
                 results.b = quadraticLeg(results.p1, results.a, 0)
                 results.h = quadraticHeight(results.p1, results.p2, 0)
             }
             // Normal height and projections (p1, p2, h possible combinations)
-            if ((measureType1 == "h" && measureType2 == "p1") || (measureType1 == "p1" & measureType2 == "h")) {
+            if ((measureType1 == "h" && measureType2 == "p1") || (measureType1 == "p1" && measureType2 == "h")) {
                 results.p2 = quadraticHeight(results.p1, 0, results.h)
                 results.a = results.p1 + results.p2
                 results.c = quadraticLeg(results.p2, results.a, 0)
                 results.b = quadraticLeg(results.p1, results.a, 0)
-            } if ((measureType1 == "h" && measureType2 == "p2") || (measureType1 == "p2" & measureType2 == "h")) {
+            } if ((measureType1 == "h" && measureType2 == "p2") || (measureType1 == "p2" && measureType2 == "h")) {
                 results.p1 = quadraticHeight(0, results.p2, results.h)
                 results.a = results.p1 + results.p2
                 results.c = quadraticLeg(results.p2, results.a, 0)
                 results.b = quadraticLeg(results.p1, results.a, 0)
             }
             // a + all options possible combinations
-            if ((measureType1 == "a" && measureType2 == "p1") || (measureType1 == "p1" & measureType2 == "a")) {
+            if ((measureType1 == "a" && measureType2 == "p1") || (measureType1 == "p1" && measureType2 == "a")) {
                 results.b = quadraticLeg(results.p1, results.a, 0)
                 results.c = pythagoras(results.a, results.b, 0)
                 results.p2 = results.a - results.p1
                 results.h = quadraticHeight(results.p1, results.p2, 0)
-            } if ((measureType1 == "a" && measureType2 == "p2") || (measureType1 == "p2" & measureType2 == "a")) {
+            } if ((measureType1 == "a" && measureType2 == "p2") || (measureType1 == "p2" && measureType2 == "a")) {
                 results.c = quadraticLeg(results.p2, results.a, 0)
                 results.b = pythagoras(results.a, 0, results.c)
                 results.p1 = results.a - results.p2
                 results.h = quadraticHeight(results.p1, results.p2, 0)
-            } if ((measureType1 == "a" && measureType2 == "h") || (measureType1 == "h" & measureType2 == "a")) {
+            } if ((measureType1 == "a" && measureType2 == "h") || (measureType1 == "h" && measureType2 == "a")) {
                 results.area = area(results.a, results.h, 0)
                 window.alert(`Jovem, ainda não sabemos a resposta completa para essa questão... Só obtivemos a área: ${results.area}. (ERRO a/h)`) // TODO: Mensagens de erro e sugestões de resposta
                 return ''
-            } if ((measureType1 == "a" && measureType2 == "area") || (measureType1 == "area" & measureType2 == "a")) {
+            } if ((measureType1 == "a" && measureType2 == "area") || (measureType1 == "area" && measureType2 == "a")) {
                 window.alert("Jovem, ainda não sabemos a resposta para essa questão... (ERRO a/area)") // TODO: Mensagens de erro, sugestões de resposta e valores achados
                 return ''
-            } if ((measureType1 == "a" && measureType2 == "per") || (measureType1 == "per" & measureType2 == "a")) {
+            } if ((measureType1 == "a" && measureType2 == "per") || (measureType1 == "per" && measureType2 == "a")) {
                 window.alert("Jovem, ainda não sabemos a resposta para essa questão... (ERRO a/per)") // TODO: Mensagens de erro e sugestões de resposta e valores achados
                 return ''
             }
             // b + all options possible combinations
-            if ((measureType1 == "b" && measureType2 == "p1") || (measureType1 == "p1" & measureType2 == "b")) {
+            if ((measureType1 == "b" && measureType2 == "p1") || (measureType1 == "p1" && measureType2 == "b")) {
                 // p1 can be a leg and b a hypotenuse
                 results.h = pythagoras(results.p1, 0, results.b)
                 results.p2 = quadraticHeight(results.p1, 0, results.h)
                 results.a = results.p1 + results.p2
                 results.c = pythagoras(results.b, 0, results.a)
-            } if ((measureType1 == "b" && measureType2 == "p2") || (measureType1 == "p2" & measureType2 == "b")) {
+            } if ((measureType1 == "b" && measureType2 == "p2") || (measureType1 == "p2" && measureType2 == "b")) {
                 window.alert("Jovem, ainda não sabemos a resposta para essa questão... (ERRO b/p2)") // TODO: Mensagens de erro, sugestões de resposta e valores achados
+            } if ((measureType1 == "b" && measureType2 == "h") || (measureType1 == "h" && measureType2 == "b")) {
+                results.p1 = pythagoras(results.h, 0, results.b)
+                results.a = quadraticLeg(results.p1, 0, results.b)
+                results.c = pythagoras(results.b, 0, results.a)
+                results.p2 = results.a - results.p1
+            } if ((measureType1 == "b" && measureType2 == "area") || (measureType1 == "area" && measureType2 == "b")) {
+                results.c = area(results.b, 0, results.area)
+                results.a = pythagoras(results.b, results.c, 0)
+                results.p1 = quadraticLeg(0, results.a, results.b)
+                results.p2 = results.a - results.p1
+                results.per = results.a + results.b + results.c
+                return ''
+            } if ((measureType1 == "b" && measureType2 == "per") || (measureType1 == "per" && measureType2 == "b")) {
+                window.alert("Jovem, ainda não sabemos a resposta para essa questão... (ERRO b/per)") // TODO: Mensagens de erro, sugestões de resposta e valores achados
+                //TODO TENTAR ACHAR RESPOSTA
             }
+
 
 
             results.area = area(results.b, results.c, 0)

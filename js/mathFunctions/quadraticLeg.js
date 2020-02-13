@@ -1,6 +1,6 @@
 export default function quadraticLeg (p, a, c) { // Function to calculate the Leg of a right triangle and others values (hypotenuse, projections)
-    // Leg of an right triangle: c1² = p1 * a  OR
-    //                           c2² = p2 * a
+    // Leg of an right triangle: b² = p1 * a  OR
+    //                           c² = p2 * a
     if (p > 0 && a > 0 && c == 0) {
         let cSolved = Math.sqrt(p * a)
 
