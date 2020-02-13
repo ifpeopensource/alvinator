@@ -27,7 +27,7 @@ var results = {
 
 export default function decisions() {
 
-    function identifySelect() { //A function to transform index of the select measure into more human-friendly variables
+    function identifySelect() { //A function to transform index of the select measure into more human-friendly properties and stores it's values
 
         switch (selectMeasure1.selectedIndex) {
             // Starting on index "1" because there's one disabled option before
@@ -136,12 +136,12 @@ export default function decisions() {
                 results.a = results.p1 + results.p2
                 results.c = quadraticLeg(results.p2, results.a, 0)
                 results.b = quadraticLeg(results.p1, results.a, 0)
-                results.h = quadraticHeight(results.p1, results.p2, 0).area = area(results.c, results.b, 0)
+                results.h = quadraticHeight(results.p1, results.p2, 0)
             } if ((measureType1 == "a" && measureType2 == "p1") || (measureType1 == "p1" & measureType2 == "a")) {
                 results.p2 = results.a - results.p1
                 results.c = quadraticLeg(results.p2, results.a, 0)
                 results.b = quadraticLeg(results.p1, results.a, 0)
-                results.h = quadraticHeight(results.p1, results.p2, 0).area = area(results.c, results.b, 0)
+                results.h = quadraticHeight(results.p1, results.p2, 0)
             } if ((measureType1 == "a" && measureType2 == "p2") || (measureType1 == "p2" & measureType2 == "a")) {
                 results.p1 = results.a - results.p2
                 results.c = quadraticLeg(results.p2, results.a, 0)
@@ -172,11 +172,25 @@ export default function decisions() {
                 results.p1 = results.a - results.p2
                 results.h = quadraticHeight(results.p1, results.p2, 0)
             } if ((measureType1 == "a" && measureType2 == "h") || (measureType1 == "h" & measureType2 == "a")) {
-                window.alert("Jovem, ainda não sabemos a resposta para essa questão... (ERRO a/h)") // TODO: Mensagens de erro e sugestões de resposta
+                results.area = area(results.a, results.h, 0)
+                window.alert(`Jovem, ainda não sabemos a resposta completa para essa questão... Só obtivemos a área: ${results.area}. (ERRO a/h)`) // TODO: Mensagens de erro e sugestões de resposta
+                return ''
             } if ((measureType1 == "a" && measureType2 == "area") || (measureType1 == "area" & measureType2 == "a")) {
-                // TODO
+                window.alert("Jovem, ainda não sabemos a resposta para essa questão... (ERRO a/area)") // TODO: Mensagens de erro, sugestões de resposta e valores achados
+                return ''
             } if ((measureType1 == "a" && measureType2 == "per") || (measureType1 == "per" & measureType2 == "a")) {
-                // TODO
+                window.alert("Jovem, ainda não sabemos a resposta para essa questão... (ERRO a/per)") // TODO: Mensagens de erro e sugestões de resposta e valores achados
+                return ''
+            }
+            // b + all options possible combinations
+            if ((measureType1 == "b" && measureType2 == "p1") || (measureType1 == "p1" & measureType2 == "b")) {
+                // p1 can be a leg and b a hypotenuse
+                results.h = pythagoras(results.p1, 0, results.b)
+                results.p2 = quadraticHeight(results.p1, 0, results.h)
+                results.a = results.p1 + results.p2
+                results.c = pythagoras(results.b, 0, results.a)
+            } if ((measureType1 == "b" && measureType2 == "p2") || (measureType1 == "p2" & measureType2 == "b")) {
+                window.alert("Jovem, ainda não sabemos a resposta para essa questão... (ERRO b/p2)") // TODO: Mensagens de erro, sugestões de resposta e valores achados
             }
 
 

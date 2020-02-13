@@ -1,4 +1,4 @@
-export default function pythagoras(a, b, c) {
+export default function pythagoras(b, c, a) {
     // a**2 = b**2 + c**2 --> The pythagoream theorem
     
     if (a == 0 && b > 0 && c > 0) { // Those first-level "if's" recognize the input of the user
