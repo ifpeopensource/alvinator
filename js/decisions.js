@@ -207,6 +207,29 @@ export default function decisions() {
                 window.alert("Jovem, ainda não sabemos a resposta para essa questão... (ERRO b/per)") // TODO: Mensagens de erro, sugestões de resposta e valores achados
                 //TODO TENTAR ACHAR RESPOSTA
             }
+            // c + all options possible combinations
+            if ((measureType1 == "c" && measureType2 == "p1") || (measureType1 == "p1" && measureType2 == "c")) {
+                window.alert("Jovem, ainda não sabemos a resposta para essa questão... (ERRO c/p1)") // TODO: Mensagens de erro, sugestões de resposta e valores achados
+            } if ((measureType1 == "c" && measureType2 == "p2") || (measureType1 == "p2" && measureType2 == "c")) {
+                results.a = quadraticLeg(results.p2, 0, results.c)
+                results.b = pythagoras(0, results.c, results.a)
+                results.p1 = quadraticLeg(0, results.a, results.b)
+                results.h = quadraticLeg(results.p1, results.p2, 0)
+            } if ((measureType1 == "c" && measureType2 == "h") || (measureType1 == "h" && measureType2 == "c")) {
+                results.p2 = pythagoras(results.h, 0, results.c)
+                results.a = quadraticLeg(results.p2, 0, results.c)
+                results.b = pythagoras(0, results.c, results.a)
+                results.p1 = results.a - results.p2
+            } if ((measureType1 == "c" && measureType2 == "area") || (measureType1 == "area" && measureType2 == "c")) {
+                results.b = area(0, results.c, results.area)
+                results.a = pythagoras(results.b, results.c, 0)
+                results.p1 = quadraticLeg(0, results.a, results.c)
+                results.p2 = results.a - results.p1
+                results.h = quadraticHeight(results.p1, results.p2, 0)
+            } if ((measureType1 == "c" && measureType2 == "per") || (measureType1 == "per" && measureType2 == "c")) {
+                window.alert("Jovem, ainda não sabemos a resposta para essa questão... (ERRO c/per)") // TODO: Mensagens de erro, sugestões de resposta e valores achados
+                //TODO TENTAR ACHAR RESPOSTA
+            }
 
 
 
