@@ -229,9 +229,24 @@ export default function decisions() {
             } if ((measureType1 == "c" && measureType2 == "per") || (measureType1 == "per" && measureType2 == "c")) {
                 window.alert("Jovem, ainda não sabemos a resposta para essa questão... (ERRO c/per)") // TODO: Mensagens de erro, sugestões de resposta e valores achados
                 //TODO TENTAR ACHAR RESPOSTA
+                return ''
             }
-
-
+            // p1 + all possible combinations
+            if ((measureType1 == "p1" && measureType2 == "area") || (measureType1 == "area" && measureType2 == "p1")) {
+                window.alert("Jovem, ainda não sabemos a resposta para essa questão... (ERRO p1/area)") // TODO: Mensagens de erro, sugestões de resposta e valores achados
+                return ''
+            } if ((measureType1 == "p1" && measureType2 == "per") || (measureType1 == "per" && measureType2 == "p1")) {
+                window.alert("Jovem, ainda não sabemos a resposta para essa questão... (ERRO p1/per)") // TODO: Mensagens de erro, sugestões de resposta e valores achados
+                return ''
+            } 
+            // p2 + all possible combinations
+            if ((measureType1 == "p2" && measureType2 == "area") || (measureType1 == "area" && measureType2 == "p2")) {
+                window.alert("Jovem, ainda não sabemos a resposta para essa questão... (ERRO p2/area)") // TODO: Mensagens de erro, sugestões de resposta e valores achados
+                return ''
+            } if ((measureType1 == "p2" && measureType2 == "per") || (measureType1 == "per" && measureType2 == "p2")) {
+                window.alert("Jovem, ainda não sabemos a resposta para essa questão... (ERRO p2/per)") // TODO: Mensagens de erro, sugestões de resposta e valores achados
+                return ''
+            }
 
             results.area = area(results.b, results.c, 0)
             results.per = results.a + results.b + results.c
