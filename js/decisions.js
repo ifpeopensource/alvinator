@@ -247,6 +247,14 @@ export default function decisions() {
                 window.alert("Jovem, ainda não sabemos a resposta para essa questão... (ERRO p2/per)") // TODO: Mensagens de erro, sugestões de resposta e valores achados
                 return ''
             }
+            // h + all possible combinations
+            if ((measureType1 == "h" && measureType2 == "area") || (measureType1 == "area" && measureType2 == "h")) {
+                window.alert("Jovem, ainda não sabemos a resposta para essa questão... (ERRO h/area)") // TODO: Mensagens de erro, sugestões de resposta e valores achados
+                return ''
+            } if ((measureType1 == "h" && measureType2 == "per") || (measureType1 == "per" && measureType2 == "h")) {
+                window.alert("Jovem, ainda não sabemos a resposta para essa questão... (ERRO h/per)") // TODO: Mensagens de erro, sugestões de resposta e valores achados
+                return ''
+            }
 
             results.area = area(results.b, results.c, 0)
             results.per = results.a + results.b + results.c
