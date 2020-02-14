@@ -255,7 +255,11 @@ export default function decisions() {
                 window.alert("Jovem, ainda não sabemos a resposta para essa questão... (ERRO h/per)") // TODO: Mensagens de erro, sugestões de resposta e valores achados
                 return ''
             }
-
+            // A + all possible combinations
+            if ((measureType1 == "area" && measureType2 == "per") || (measureType1 == "per" && measureType2 == "area")) {
+                window.alert("Jovem, ainda não sabemos a resposta para essa questão... (ERRO area/per)") // TODO: Mensagens de erro, sugestões de resposta e valores achados
+                return ''
+            }
             results.area = area(results.b, results.c, 0)
             results.per = results.a + results.b + results.c
             console.log(results)
