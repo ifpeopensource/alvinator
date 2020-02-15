@@ -85,16 +85,16 @@ h3 {
 }
 #inputCalculate:hover {
     background-color: rgb(16, 175, 69);
-    border: 1pt solid rgb(16, 175, 69);
+    border: 1.5pt solid rgb(16, 175, 69);
     color: #FFF;
     box-shadow: 1.5pt 1pt 10pt rgba(0, 0, 0, 0.35);
-    padding: 22px 130px;
 }
 #infoButton {
     background-color: white;
-    padding: 1px;
+    border: white;
+    padding: 0px;
     color: $mainColor;
     border-color: white;
     margin-right: -378pt;
-    margin-bottom: 20px;
+    margin-top: -2px;
 }

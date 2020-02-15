@@ -100,19 +100,19 @@ h3 {
 
 #inputCalculate:hover {
   background-color: #10af45;
-  border: 1pt solid #10af45;
+  border: 1.5pt solid #10af45;
   color: #FFF;
   -webkit-box-shadow: 1.5pt 1pt 10pt rgba(0, 0, 0, 0.35);
           box-shadow: 1.5pt 1pt 10pt rgba(0, 0, 0, 0.35);
-  padding: 22px 130px;
 }
 
 #infoButton {
   background-color: white;
-  padding: 1px;
+  border: white;
+  padding: 0px;
   color: #10af45;
   border-color: white;
   margin-right: -378pt;
-  margin-bottom: 20px;
+  margin-top: -2px;
 }
 /*# sourceMappingURL=style.css.map */
