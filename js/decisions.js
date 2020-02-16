@@ -13,7 +13,7 @@ let inputMeasure2 = document.getElementById("inputMeasure2")
 var measureType1 = ""
 var measureType2 = ""
 
-var results = {
+let results = {
     a: 0,
     b: 0,
     c: 0,
@@ -262,8 +262,9 @@ export default function decisions() {
             }
             results.area = area(results.b, results.c, 0)
             results.per = results.a + results.b + results.c
-            console.log(results)
-        }
+            }
     }
     mainDecisions()
+    localStorage.setItem('results', JSON.stringify(results))
+    return results
 }

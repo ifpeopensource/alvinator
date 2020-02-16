@@ -4,8 +4,8 @@ let infoButton = document.getElementById('infoButton')
 let bigContainer = document.getElementById('bigContainer')
 var body = document.getElementsByTagName("body")[0]
 
-function main() {
-    decisions()
+let test = () => {
+    let results = JSON.parse(localStorage.getItem('results')) || {}
 }
 
 function infoButtonArea() {
@@ -13,11 +13,11 @@ function infoButtonArea() {
     body.appendChild(infoButtonArea)
     infoButtonArea.setAttribute("id", "infoButtonArea")
     console.log("test")
-    console.log("test")
-    //infoButtonArea.style.padding = "20px"
-    //infoButtonArea.style.backgroundColor = "white"
     //TODO Styles and animations
 }
 
-inputCalculate.addEventListener("click", main)
+inputCalculate.addEventListener("click", decisions && test)
 infoButton.addEventListener("click", infoButtonArea)
+
+let results = JSON.parse(localStorage.getItem('results')) || {}
+console.log(results)
