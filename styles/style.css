@@ -116,8 +116,20 @@ h3 {
   margin-top: -2px;
 }
 
-#infoButtonArea {
+#infoButtonAreaOn {
   padding: 20px;
-  background-color: yellow;
+  background-color: whitesmoke;
+  width: 500px;
+  height: 100px;
+  margin: auto;
+  margin-top: 10px;
+  border-radius: 15px;
+}
+
+#infoButtonAreaOff {
+  padding: 0px;
+  background-color: none;
+  width: 0;
+  height: 0;
 }
 /*# sourceMappingURL=style.css.map */

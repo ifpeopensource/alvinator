@@ -265,6 +265,5 @@ export default function decisions() {
             }
     }
     mainDecisions()
-    localStorage.setItem('results', JSON.stringify(results))
-    return results
+    results
 }
