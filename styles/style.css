@@ -124,12 +124,17 @@ h3 {
   margin: auto;
   margin-top: 10px;
   border-radius: 15px;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
 }
 
 #infoButtonAreaOff {
-  padding: 0px;
-  background-color: none;
-  width: 0;
+  visibility: hidden;
+  width: 530px;
   height: 0;
+  margin: auto;
+  margin-top: 10px;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
 }
 /*# sourceMappingURL=style.css.map */
