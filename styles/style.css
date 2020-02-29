@@ -124,8 +124,22 @@ h3 {
   margin: auto;
   margin-top: 10px;
   border-radius: 15px;
-  -webkit-transition: 0.4s;
-  transition: 0.4s;
+  -webkit-transition: 0.9s;
+  transition: 0.9s;
+  -webkit-box-shadow: 0pt 0pt 15pt rgba(0, 0, 0, 0.25);
+          box-shadow: 0pt 0pt 15pt rgba(0, 0, 0, 0.25);
+}
+
+#infoButtonAreaOn #howWorks {
+  font-family: 'Muli', sans-serif;
+  text-align: center;
+  color: #8f8f8f;
+}
+
+#infoButtonAreaOn #howWorks .important {
+  font-family: 'Muli', sans-serif;
+  text-align: center;
+  color: #10af45;
 }
 
 #infoButtonAreaOff {
@@ -134,7 +148,20 @@ h3 {
   height: 0;
   margin: auto;
   margin-top: 10px;
-  -webkit-transition: 0.4s;
-  transition: 0.4s;
+  -webkit-transition: 0.9s;
+  transition: 0.9s;
+}
+
+#infoButtonAreaOff #howWorks {
+  visibility: hidden;
+  font-family: 'Muli', sans-serif;
+  text-align: center;
+  color: #8f8f8f;
+}
+
+#infoButtonAreaOff #howWorks .important {
+  font-family: 'Muli', sans-serif;
+  text-align: center;
+  color: #10af45;
 }
 /*# sourceMappingURL=style.css.map */
