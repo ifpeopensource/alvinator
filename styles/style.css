@@ -136,14 +136,6 @@ h3 {
   color: #8f8f8f;
 }
 
-#infoButtonAreaOn #howWorks .important {
-  font-family: 'Muli', sans-serif;
-  text-align: center;
-  color: #10af45;
-  -webkit-transition: 4s;
-  transition: 4s;
-}
-
 #infoButtonAreaOff {
   visibility: hidden;
   width: 530px;
@@ -161,22 +153,29 @@ h3 {
   color: #8f8f8f;
 }
 
-#infoButtonAreaOff #howWorks .important {
-  font-family: 'Muli', sans-serif;
-  text-align: center;
-  color: #10af45;
-}
-
 #resultsOn {
-  padding: 20px;
+  font-family: 'Muli', sans-serif;
+  color: #8f8f8f;
   background-color: whitesmoke;
+  padding: 20px;
   width: 500px;
   margin: auto;
   margin-top: 10px;
+  margin-bottom: 10px;
   border-radius: 15px;
   -webkit-box-shadow: 0pt 0pt 15pt rgba(0, 0, 0, 0.25);
           box-shadow: 0pt 0pt 15pt rgba(0, 0, 0, 0.25);
   -webkit-transition: 0.9s;
   transition: 0.9s;
+}
+
+#resultsOff {
+  visibility: hidden;
+}
+
+.important {
+  font-family: 'Muli', sans-serif;
+  text-align: center;
+  color: #10af45;
 }
 /*# sourceMappingURL=style.css.map */

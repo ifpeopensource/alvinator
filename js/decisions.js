@@ -22,6 +22,7 @@ let results = {
     h: 0,
     area: 0,
     per: 0,
+    click: false,
 }
 
 
@@ -262,6 +263,7 @@ export default function decisions() {
             }
             results.area = area(results.b, results.c, 0)
             results.per = results.a + results.b + results.c
+            results.click = true
             }
     }
     mainDecisions()
