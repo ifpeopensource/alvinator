@@ -265,5 +265,6 @@ export default function decisions() {
             }
     }
     mainDecisions()
-    results
+    //console.log(results)
+    return results
 }

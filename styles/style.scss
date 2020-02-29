@@ -116,6 +116,7 @@ h3 {
                 font-family: 'Muli', sans-serif;
                 text-align: center;
                 color: $mainColor;
+                transition: 4s;
             }
     }
 } 
@@ -136,5 +137,16 @@ h3 {
             text-align: center;
             color: $mainColor;
         }
-}
+    }
 } 
+#resultsOn {
+    padding: 20px;
+    background-color: whitesmoke;
+    width: 500px;
+    margin: auto;
+    margin-top: 10px;
+    border-radius: 15px;
+    box-shadow: 0pt 0pt 15pt rgba(0, 0, 0, 0.25);
+    transition: 0.9s;
+} 
+
