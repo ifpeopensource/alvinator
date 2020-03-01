@@ -1,5 +1,8 @@
 import decisions from './decisions.js'
 
+let inputMeasure2 = document.getElementById("inputMeasure2")
+let inputMeasure1 = document.getElementById("inputMeasure1")
+
 let bigContainer = document.getElementById('bigContainer')
 var body = document.getElementsByTagName("body")[0]
 
@@ -55,5 +58,17 @@ function resultsButtonDisplay() {
 
 }
 
-resultsButton.addEventListener("click", resultsButtonDisplay)
 infoButton.addEventListener("click", infoButtonAreaDisplay)
+resultsButton.addEventListener("click", resultsButtonDisplay)
+inputMeasure2.addEventListener("keyup", (event) => {
+    if (event.keyCode === 13) {
+    event.preventDefault();
+    resultsButton.click();
+    }
+})
+inputMeasure1.addEventListener("keyup", (event) => {
+    if (event.keyCode === 13) {
+    event.preventDefault();
+    resultsButton.click();
+    }
+})
