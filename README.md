@@ -5,4 +5,4 @@ O assunto envolve Trigonometria e cálculos com o triângulo retângulo. O códi
 
 ![Vídeo de demonstração](https://github.com/fabiopapaiss/alvinator/blob/master/alvinatorGif.gif)
 
-Atualmente, o projeto está em fase inicial, com arquitetura um pouco bagunçada e certos bugs. Caso queira contribuir com o projeto, veja um de nossos issues ou abra um issue com suas dúvidas!
+Atualmente, o projeto está em fase inicial, com arquitetura um pouco bagunçada e certos bugs. Caso queira contribuir com o projeto, **veja um de nossos issues** ou **abra um issue** com suas dúvidas!
