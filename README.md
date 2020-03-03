@@ -1,4 +1,4 @@
-# *alvinator!*
+<h1 style = "font-style: italic; font-weight: bolder; color: #10af45;"> alvinator! </h1>
 ### Site que resolve questões iniciais de Trigonometria em Triângulos Retângulos da matéria Matemática II, ministrada pelo professor Pedro Alvino.
 
 O assunto envolve Trigonometria e cálculos com o triângulo retângulo. O código em JS calcula os lados, alturas, projeções, área e perímetro do triângulo baseado em apenas dois valores dados pelo usuário (tudo client-side). O objetivo que outros alunos tambémm possam usar o site e conferir suas respostas.
