@@ -116,11 +116,17 @@ h3 {
   margin-top: -2px;
 }
 
+#infoButton :hover {
+  -webkit-transition: 1s;
+  transition: 1s;
+  color: #0e7a32;
+}
+
 #infoButtonAreaOn {
   padding: 20px;
-  background-color: whitesmoke;
+  background-color: white;
   width: 500px;
-  height: 100px;
+  height: 480px;
   margin: auto;
   margin-top: 10px;
   border-radius: 15px;
@@ -131,6 +137,8 @@ h3 {
 }
 
 #infoButtonAreaOn #howWorks {
+  -webkit-transition-delay: 0.65s;
+          transition-delay: 0.65s;
   font-family: 'Muli', sans-serif;
   text-align: center;
   color: #8f8f8f;
@@ -156,7 +164,7 @@ h3 {
 #resultsOn {
   font-family: 'Muli', sans-serif;
   color: #8f8f8f;
-  background-color: whitesmoke;
+  background-color: white;
   padding: 20px;
   width: 500px;
   margin: auto;
@@ -165,6 +173,8 @@ h3 {
   border-radius: 15px;
   -webkit-box-shadow: 0pt 0pt 15pt rgba(0, 0, 0, 0.25);
           box-shadow: 0pt 0pt 15pt rgba(0, 0, 0, 0.25);
+  -webkit-transition-delay: 0.65s;
+          transition-delay: 0.65s;
   -webkit-transition: 0.9s;
   transition: 0.9s;
 }

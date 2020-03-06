@@ -110,24 +110,24 @@ export default function decisions() {
 
         identifySelect()
 
-        if ((measureType1 == measureType2) || (Number(inputMeasure1.value) == 0 || Number(inputMeasure1.value) == 0)) { // Checagem inicial dos dados
+        if ((measureType1 == measureType2) || (Number(inputMeasure1.value) == 0 || Number(inputMeasure2.value) == 0)) { // Checagem inicial dos dados
             window.alert("Coloque algo direito nesta merda jovem!")
         }
         else { // Sorry for so many "if's", unfortunately, it's not an AI ;-;
 
             //Normal Pythagoras block (a,b,c possible combinations)
             if ((measureType1 == "b" && measureType2 == "c") || (measureType1 == "c" && measureType2 == "b")) {
-                results.a = pythagoras(0, results.b, results.c)
+                results.a = pythagoras(results.b, results.c, 0)
                 results.p1 = quadraticLeg(0, results.a, results.c)
                 results.p2 = quadraticLeg(0, results.a, results.b)
                 results.h = quadraticHeight(results.p1, results.p2, 0)
             } if ((measureType1 == "a" && measureType2 == "b") || (measureType1 == "b" && measureType2 == "a")) {
-                results.c = pythagoras(results.a, results.b, 0)
+                results.c = pythagoras(results.b, 0, results.a)
                 results.p1 = quadraticLeg(0, results.a, results.c)
                 results.p2 = quadraticLeg(0, results.a, results.b)
                 results.h = quadraticHeight(results.p1, results.p2, 0)
             } if ((measureType1 == "a" && measureType2 == "c") || (measureType1 == "c" && measureType2 == "a")) {
-                results.b = pythagoras(results.a, 0, results.c)
+                results.b = pythagoras(0, results.c, results.a)
                 results.p1 = quadraticLeg(0, results.a, results.c)
                 results.p2 = quadraticLeg(0, results.a, results.b)
                 results.h = quadraticHeight(results.p1, results.p2, 0)
@@ -153,7 +153,7 @@ export default function decisions() {
             if ((measureType1 == "h" && measureType2 == "p1") || (measureType1 == "p1" && measureType2 == "h")) {
                 results.p2 = quadraticHeight(results.p1, 0, results.h)
                 results.a = results.p1 + results.p2
-                results.c = quadraticLeg(results.p2, results.a, 0)
+                results.c = quadraticLeg(results.p2, results.a, 0) 
                 results.b = quadraticLeg(results.p1, results.a, 0)
             } if ((measureType1 == "h" && measureType2 == "p2") || (measureType1 == "p2" && measureType2 == "h")) {
                 results.p1 = quadraticHeight(0, results.p2, results.h)
@@ -164,12 +164,12 @@ export default function decisions() {
             // a + all options possible combinations
             if ((measureType1 == "a" && measureType2 == "p1") || (measureType1 == "p1" && measureType2 == "a")) {
                 results.b = quadraticLeg(results.p1, results.a, 0)
-                results.c = pythagoras(results.a, results.b, 0)
+                results.c = pythagoras(results.b, 0, results.a)
                 results.p2 = results.a - results.p1
                 results.h = quadraticHeight(results.p1, results.p2, 0)
             } if ((measureType1 == "a" && measureType2 == "p2") || (measureType1 == "p2" && measureType2 == "a")) {
                 results.c = quadraticLeg(results.p2, results.a, 0)
-                results.b = pythagoras(results.a, 0, results.c)
+                results.b = pythagoras(0, results.c, results.a)
                 results.p1 = results.a - results.p2
                 results.h = quadraticHeight(results.p1, results.p2, 0)
             } if ((measureType1 == "a" && measureType2 == "h") || (measureType1 == "h" && measureType2 == "a")) {
@@ -267,6 +267,5 @@ export default function decisions() {
             }
     }
     mainDecisions()
-    //console.log(results)
     return results
 }
