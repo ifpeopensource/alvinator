@@ -1,6 +1,8 @@
-# alvinator!
-<strong>Projeto de um site que resolva questões iniciais de Trigonometria em Triângulos Retângulos da matéria Matemática II, ministrada pelo professor Pedro Alvino.</strong>
+# *alvinator!*
+### Site que resolve questões iniciais de Trigonometria em Triângulos Retângulos da matéria Matemática II, ministrada pelo professor Pedro Alvino.
 
-O assunto envolve Trigonometria e cálculos com o triângulo retângulo. O objetivo é criar um site que calcule os lados, alturas, projeções, área e perímetro do triângulo baseado em apenas dois valores dados pelo usuário (tudo client-side).
+O assunto envolve Trigonometria e cálculos com o triângulo retângulo. O código em JS calcula os lados, alturas, projeções, área e perímetro do triângulo baseado em apenas dois valores dados pelo usuário (tudo client-side). O objetivo que outros alunos tambémm possam usar o site e conferir suas respostas.
 
-A dificuldade em executar a tarefa não está somente em fazer os cáculos, mas sim decidir que algoritmo (equação) usar para cada problema (cada valor dado) e como reaproveitar os dados.
+![Vídeo de demonstração](https://github.com/fabiopapaiss/alvinator/blob/master/alvinatorGif.gif)
+
+Atualmente, o projeto está em fase inicial, com arquitetura um pouco bagunçada e certos bugs. Caso queira contribuir com o projeto, **veja um de nossos issues** ou **abra um issue** com suas dúvidas!
