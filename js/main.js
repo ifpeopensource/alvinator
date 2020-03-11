@@ -49,8 +49,8 @@ function resultsButtonDisplay() {
         a.innerHTML += `<span class = "important">${results.a}</span>`
         b.innerHTML += `<span class = "important">${results.b}</span>`
         c.innerHTML += `<span class = "important">${results.c}</span>`
-        p1.innerHTML += `<span class = "important">${results.p1}</span>`
-        p2.innerHTML += `<span class = "important">${results.p2}</span>`
+        p1.innerHTML += `<span class = "important">${results.p2}</span>` // reverse values, fix better later
+        p2.innerHTML += `<span class = "important">${results.p1}</span>` // reverse values, fix better later
         h.innerHTML += `<span class = "important">${results.h}</span>`
         per.innerHTML += `<span class = "important">${results.per}</span>`
         area.innerHTML += `<span class = "important">${results.area}</span>`    
