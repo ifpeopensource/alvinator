@@ -195,9 +195,6 @@ h3 {
     font-size: 15px;
     padding-top: 10px;
   }
-  /*.github-corner {
-        visibility: hidden;
-    }*/
   #bigContainer {
     padding: 60px;
     width: 250px;
@@ -235,10 +232,11 @@ h3 {
   }
   #infoButtonAreaOff {
     visibility: hidden;
-    padding: 0px 50px;
+    padding: 0px 20px;
     width: 270px;
     height: 0px;
     margin: auto;
+    margin-top: 10px;
   }
   #resultsOn {
     padding: 50px;
