@@ -137,6 +137,11 @@ h3 {
   color: #8f8f8f;
 }
 
+#infoButtonAreaOn img {
+  width: 100%;
+  height: auto;
+}
+
 #infoButtonAreaOff {
   visibility: hidden;
   width: 530px;
@@ -182,7 +187,7 @@ h3 {
   color: #10af45;
 }
 
-@media only screen and (max-width: 900px) {
+@media only screen and (max-width: 600px) {
   #ola {
     font-size: 30px;
   }
@@ -190,19 +195,13 @@ h3 {
     font-size: 15px;
     padding-top: 10px;
   }
-  .github-corner {
-    visibility: hidden;
-  }
+  /*.github-corner {
+        visibility: hidden;
+    }*/
   #bigContainer {
     padding: 60px;
-    width: 200px;
+    width: 250px;
     height: 280px;
-  }
-  #inputCalculate {
-    padding: 15px 50px;
-    -webkit-transition: 0.8s;
-    transition: 0.8s;
-    margin-left: -16px;
   }
   .inputs {
     margin-left: -10px;
@@ -213,6 +212,40 @@ h3 {
   }
   .inputNumbers {
     padding: 6px 18px;
+  }
+  #inputCalculate {
+    padding: 15px 50px;
+    -webkit-transition: 0.8s;
+    transition: 0.8s;
+    margin: auto;
+    margin-top: 10px;
+  }
+  #infoButton {
+    margin-right: -250pt;
+    margin-top: -10px;
+  }
+  #infoButtonAreaOn {
+    padding: 50px;
+    width: 270px;
+    height: 350px;
+    margin: auto;
+    margin-top: 10px;
+    -webkit-transition: 1s;
+    transition: 1s;
+  }
+  #infoButtonAreaOff {
+    visibility: hidden;
+    padding: 0px 50px;
+    width: 270px;
+    height: 0px;
+    margin: auto;
+  }
+  #resultsOn {
+    padding: 50px;
+    width: 270px;
+    margin: auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
   }
 }
 /*# sourceMappingURL=style.css.map */

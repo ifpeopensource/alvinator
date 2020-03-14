@@ -114,6 +114,10 @@ h3 {
             text-align: center;
             color: rgb(143, 143, 143);
     }
+        img {
+            width: 100%;
+            height: auto;
+        }
 } 
 #infoButtonAreaOff {
     visibility: hidden;
@@ -151,7 +155,7 @@ h3 {
     text-align: center;
     color: $mainColor;
 }
-@media only screen and (max-width: 900px) { // TODO  *Responsive* edits, not just margins adjustments
+@media only screen and (max-width: 600px) {
     #ola {
         font-size: 30px;
     }
@@ -159,18 +163,13 @@ h3 {
         font-size: 15px;
         padding-top: 10px;
     }
-    .github-corner {
+    /*.github-corner {
         visibility: hidden;
-    }
+    }*/
     #bigContainer {
         padding: 60px;
-        width: 200px;
+        width: 250px;
         height: 280px;
-    }
-    #inputCalculate {
-        padding: 15px 50px;
-        transition: 0.8s;
-        margin-left: -16px;
     }
     .inputs {
         margin-left: -10px;
@@ -178,9 +177,40 @@ h3 {
     .measureTypes {
         padding: 6px 18px;
         width: 213px;
-
     }
     .inputNumbers {
         padding: 6px 18px;
     }
+    #inputCalculate {
+        padding: 15px 50px;
+        transition: 0.8s;
+        margin: auto;
+        margin-top: 10px;
+    }
+    #infoButton {
+        margin-right: -250pt;
+        margin-top: -10px;
+    }
+    #infoButtonAreaOn {
+        padding: 50px;
+        width: 270px;
+        height: 350px;
+        margin: auto;
+        margin-top: 10px;
+        transition: 1s;
+    }
+    #infoButtonAreaOff {
+        visibility: hidden;
+        padding: 0px 50px;
+        width: 270px;
+        height: 0px;
+        margin: auto;
+    }  
+    #resultsOn {
+        padding: 50px;
+        width: 270px;
+        margin: auto;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    } 
 }
