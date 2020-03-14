@@ -42,13 +42,6 @@ footer {
   height: 200px;
   margin: auto;
   border-radius: 15px;
-  -webkit-box-shadow: 0pt 0pt 0pt rgba(0, 0, 0, 0);
-          box-shadow: 0pt 0pt 0pt rgba(0, 0, 0, 0);
-  -webkit-transition: 1.2s;
-  transition: 1.2s;
-}
-
-#bigContainer:hover, #bigContainer:focus {
   -webkit-box-shadow: 0pt 0pt 15pt rgba(0, 0, 0, 0.25);
           box-shadow: 0pt 0pt 15pt rgba(0, 0, 0, 0.25);
 }
@@ -187,5 +180,43 @@ h3 {
   font-family: 'Muli', sans-serif;
   text-align: center;
   color: #10af45;
+}
+
+@media only screen and (max-width: 400px) {
+  #ola {
+    font-size: 30px;
+    margin-right: -77px;
+  }
+  #alvinator {
+    font-size: 15px;
+    margin-top: -18px;
+    margin-right: -77px;
+  }
+  .github-corner {
+    visibility: hidden;
+  }
+  #bigContainer {
+    padding: 50px;
+    width: 200px;
+    height: 280px;
+    margin-left: 45px;
+  }
+  #inputCalculate {
+    padding: 15px 50px;
+    margin-top: 15px;
+    -webkit-transition: 0.8s;
+    transition: 0.8s;
+    margin-left: -16px;
+  }
+  .inputs {
+    margin-left: -10px;
+  }
+  .measureTypes {
+    padding: 6px 18px;
+    width: 213px;
+  }
+  .inputNumbers {
+    padding: 6px 18px;
+  }
 }
 /*# sourceMappingURL=style.css.map */
