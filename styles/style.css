@@ -182,7 +182,7 @@ h3 {
   color: #10af45;
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 900px) {
   #ola {
     font-size: 30px;
   }
