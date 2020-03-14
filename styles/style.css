@@ -182,28 +182,24 @@ h3 {
   color: #10af45;
 }
 
-@media only screen and (max-width: 400px) {
+@media only screen and (max-width: 600px) {
   #ola {
     font-size: 30px;
-    margin-right: -77px;
   }
   #alvinator {
     font-size: 15px;
-    margin-top: -18px;
-    margin-right: -77px;
+    padding-top: 10px;
   }
   .github-corner {
     visibility: hidden;
   }
   #bigContainer {
-    padding: 50px;
+    padding: 60px;
     width: 200px;
     height: 280px;
-    margin-left: 45px;
   }
   #inputCalculate {
     padding: 15px 50px;
-    margin-top: 15px;
     -webkit-transition: 0.8s;
     transition: 0.8s;
     margin-left: -16px;

@@ -151,28 +151,24 @@ h3 {
     text-align: center;
     color: $mainColor;
 }
-@media only screen and (max-width: 400px) { // TODO  *Responsive* edits, not just margins adjustments
+@media only screen and (max-width: 600px) { // TODO  *Responsive* edits, not just margins adjustments
     #ola {
         font-size: 30px;
-        margin-right: -77px;
     }
     #alvinator {
         font-size: 15px;
-        margin-top: -18px;
-        margin-right: -77px;
+        padding-top: 10px;
     }
     .github-corner {
         visibility: hidden;
     }
     #bigContainer {
-        padding: 50px;
+        padding: 60px;
         width: 200px;
         height: 280px;
-        margin-left: 45px;
     }
     #inputCalculate {
         padding: 15px 50px;
-        margin-top: 15px;
         transition: 0.8s;
         margin-left: -16px;
     }
