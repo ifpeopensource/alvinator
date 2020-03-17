@@ -5,7 +5,47 @@ $mainColor : rgb(16, 175, 69);
     color: $mainColor;
 }
 body {
-    background-color: rgb(16, 175, 69);
+    background-color: $mainColor;
+}
+@keyframes blinkingSolved {
+    0% {
+        background-color: $mainColor;
+    }
+    30% {
+        background-color: rgb(4, 143, 50);
+    }
+    60% {
+        background-color: $mainColor;
+    }
+    80% {
+        background-color: rgb(4, 143, 50);
+    }
+}
+@keyframes blinkingError {
+    0% {
+        background-color: $mainColor;
+    }
+    30% {
+        background-color: rgb(199, 86, 58);
+    }
+    48% {
+        background-color: $mainColor;
+    }
+    70% {
+        background-color: rgb(199, 86, 58);
+    }
+    100% {
+        background-color: $mainColor;
+    }
+}
+.solvedAnimation {
+    animation-name: blinkingSolved;
+    animation-duration: 2s;
+    transition: 1s;
+}
+.errorAnimation {
+    animation-name: blinkingError;
+    animation-duration: 3s;
 }
 #header {
     font-family: 'Muli', sans-serif;

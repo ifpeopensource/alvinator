@@ -26,6 +26,7 @@ function infoButtonAreaDisplay() {
 
 function resultsButtonDisplay() {
     let results = decisions()
+
     let a = document.getElementById("a")
     let b = document.getElementById("b")
     let c = document.getElementById("c")
