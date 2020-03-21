@@ -4,26 +4,26 @@ export default function quadraticLeg (p, a, c) { // Function to calculate the Le
     if (p > 0 && a > 0 && c == 0) {
         let cSolved = Math.sqrt(p * a)
 
-        if (cSolved > 0) {
+        if (cSolved == 0 || cSolved == 'undefined') { 
+            return `${cSolved}! Jovem, isto está altamente errado!`
+        } if (cSolved > 0) {
             return cSolved
-        } if (cSolved == 0) { 
-            return `O resultado do Cateto C foi ${cSolved}, verifique seus dados Jovem!`
         }
     } if (p > 0 && a == 0 && c > 0) {
         let aSolved = (c ** 2) / p
 
-        if (aSolved > 0) {
+        if (aSolved == 0 || aSolved == 'undefined') { 
+            return `${aSolved}! Jovem, isto está altamente errado!`
+        } if (aSolved > 0) {
             return aSolved
-        } if (aSolved == 0) { 
-            return `O resultado da Hipotenusa foi ${aSolved}, verifique seus dados Jovem!`
         }
     } if (p == 0 && a > 0 && c > 0) {
         let pSolved = (c ** 2) / a
         
-        if (pSolved > 0) {
+        if (pSolved == 0 || pSolved == 'undefined') { 
+            return `${pSolved}! Jovem, isto está altamente errado!`
+        } if (pSolved > 0) {
             return pSolved
-        } if (pSolved == 0) { 
-            return `O resultado da Projeção foi ${pSolved}, verifique seus dados Jovem!`
         }
     }
 

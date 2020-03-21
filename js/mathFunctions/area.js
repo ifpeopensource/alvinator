@@ -4,26 +4,26 @@ export default function area1(b,c,ar) { // Simple function to calculate the area
     if (b > 0 && c > 0 && ar == 0) {
         let arSolved = (c*b) / 2
         
-        if (arSolved > 0) {
+        if (arSolved == 'undefined' || arSolved <= 0) {
+            return `${arSolved}! Jovem, isto está altamente errado!`
+        } if (arSolved > 0) {
             return arSolved
-        } if (arSolved == 0 || arSolved < 0) {
-            return `O resultado da Área foi ${arSolved}, isto é altamente estranho jovem`
         }
     } if (b > 0 && c == 0 && ar > 0) {
         let cSolved = (2 * ar) / b
 
-        if (cSolved > 0) {
+        if (cSolved == 'undefined' || cSolved <= 0) {
+            return `${cSolved}! Jovem, isto está altamente errado!`
+        } if (cSolved > 0) {
             return cSolved
-        } if (cSolved == 0 || cSolved < 0) {
-            return `O resultado do Cateto C foi ${cSolved}, isto é altamente estranho jovem`
         }
     } if (b == 0 && c > 0 && ar > 0) {
         let bSolved = (2 * ar) / c
 
-        if (bSolved > 0) {
+        if (bSolved == 'undefined' || bSolved <= 0) {
+            return `${bSolved}! Jovem, isto está altamente errado!`
+        } if (bSolved > 0) {
             return bSolved
-        } if (bSolved == 0 || bSolved < 0) {
-            return `O resultado do Cateto B foi ${bSolved}, isto é altamente estranho jovem`
         }
     }
 

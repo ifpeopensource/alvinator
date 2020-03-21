@@ -44,7 +44,9 @@ function resultsButtonDisplay() {
     area.innerHTML = "O valor da área (A) é: " 
     per.innerHTML = "O valor do perímetro (2p) é: "
     console.log(results)
-    if (results.click == true && results.per != 0) {
+
+
+    if (results.click == true) {
         resultsButtonArea[0].setAttribute("id", "resultsOn")
         a.innerHTML += `<span class = "important">${results.a}</span>`
         b.innerHTML += `<span class = "important">${results.b}</span>`

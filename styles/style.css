@@ -227,14 +227,11 @@ h3 {
     height: 350px;
     margin: auto;
     margin-top: 10px;
-    -webkit-transition: 1s;
-    transition: 1s;
   }
   #infoButtonAreaOff {
     visibility: hidden;
-    padding: 0px 20px;
+    padding: 20px;
     width: 270px;
-    height: 0px;
     margin: auto;
     margin-top: 10px;
   }
@@ -244,6 +241,11 @@ h3 {
     margin: auto;
     margin-top: 10px;
     margin-bottom: 10px;
+  }
+  #resultsOff {
+    padding: 0px 50px;
+    width: 270px;
+    visibility: hidden;
   }
 }
 /*# sourceMappingURL=style.css.map */

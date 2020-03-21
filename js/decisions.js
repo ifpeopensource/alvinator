@@ -64,8 +64,6 @@ export default function decisions() {
                 measureType1 = "per"
                 results.per = Number(inputMeasure1.value)
                 break
-            default:
-                window.alert("Erro! Existe algo de errado jovem!")
         }
 
         switch (selectMeasure2.selectedIndex) {
@@ -101,8 +99,6 @@ export default function decisions() {
                 measureType2 = "per"
                 results.per = Number(inputMeasure2.value)
                 break
-            default:
-                window.alert("Erro! Existe algo de errado jovem!")
         }
         console.log(measureType1, measureType2)
     }
@@ -191,7 +187,7 @@ export default function decisions() {
                 results.a = results.p1 + results.p2
                 results.c = pythagoras(results.b, 0, results.a)
             } if ((measureType1 == "b" && measureType2 == "p2") || (measureType1 == "p2" && measureType2 == "b")) {
-                window.alert("Jovem, ainda não sabemos a resposta para essa questão... (ERRO b/p2)") // TODO: Mensagens de erro, sugestões de resposta e valores achados
+                window.alert("Jovem, ainda não sabemos a resposta para essa questão... (ERRO b/p2)") 
             } if ((measureType1 == "b" && measureType2 == "h") || (measureType1 == "h" && measureType2 == "b")) {
                 results.p1 = pythagoras(results.h, 0, results.b)
                 results.a = quadraticLeg(results.p1, 0, results.b)
@@ -205,12 +201,12 @@ export default function decisions() {
                 results.per = results.a + results.b + results.c
                 return ''
             } if ((measureType1 == "b" && measureType2 == "per") || (measureType1 == "per" && measureType2 == "b")) {
-                window.alert("Jovem, ainda não sabemos a resposta para essa questão... (ERRO b/per)") // TODO: Mensagens de erro, sugestões de resposta e valores achados
+                window.alert("Jovem, ainda não sabemos a resposta para essa questão... (ERRO b/per)") 
                 //TODO TENTAR ACHAR RESPOSTA
             }
             // c + all options possible combinations
             if ((measureType1 == "c" && measureType2 == "p1") || (measureType1 == "p1" && measureType2 == "c")) {
-                window.alert("Jovem, ainda não sabemos a resposta para essa questão... (ERRO c/p1)") // TODO: Mensagens de erro, sugestões de resposta e valores achados
+                window.alert("Jovem, ainda não sabemos a resposta para essa questão... (ERRO c/p1)") 
             } if ((measureType1 == "c" && measureType2 == "p2") || (measureType1 == "p2" && measureType2 == "c")) {
                 results.a = quadraticLeg(results.p2, 0, results.c)
                 results.b = pythagoras(0, results.c, results.a)
@@ -228,41 +224,45 @@ export default function decisions() {
                 results.p2 = results.a - results.p1
                 results.h = quadraticHeight(results.p1, results.p2, 0)
             } if ((measureType1 == "c" && measureType2 == "per") || (measureType1 == "per" && measureType2 == "c")) {
-                window.alert("Jovem, ainda não sabemos a resposta para essa questão... (ERRO c/per)") // TODO: Mensagens de erro, sugestões de resposta e valores achados
-                //TODO TENTAR ACHAR RESPOSTA
+                window.alert("Jovem, ainda não sabemos a resposta para essa questão... (ERRO c/per)") 
                 return ''
             }
             // p1 + all possible combinations
             if ((measureType1 == "p1" && measureType2 == "area") || (measureType1 == "area" && measureType2 == "p1")) {
-                window.alert("Jovem, ainda não sabemos a resposta para essa questão... (ERRO p1/area)") // TODO: Mensagens de erro, sugestões de resposta e valores achados
+                window.alert("Jovem, ainda não sabemos a resposta para essa questão... (ERRO p1/area)") 
                 return ''
             } if ((measureType1 == "p1" && measureType2 == "per") || (measureType1 == "per" && measureType2 == "p1")) {
-                window.alert("Jovem, ainda não sabemos a resposta para essa questão... (ERRO p1/per)") // TODO: Mensagens de erro, sugestões de resposta e valores achados
+                window.alert("Jovem, ainda não sabemos a resposta para essa questão... (ERRO p1/per)") 
                 return ''
             } 
             // p2 + all possible combinations
             if ((measureType1 == "p2" && measureType2 == "area") || (measureType1 == "area" && measureType2 == "p2")) {
-                window.alert("Jovem, ainda não sabemos a resposta para essa questão... (ERRO p2/area)") // TODO: Mensagens de erro, sugestões de resposta e valores achados
+                window.alert("Jovem, ainda não sabemos a resposta para essa questão... (ERRO p2/area)") 
                 return ''
             } if ((measureType1 == "p2" && measureType2 == "per") || (measureType1 == "per" && measureType2 == "p2")) {
-                window.alert("Jovem, ainda não sabemos a resposta para essa questão... (ERRO p2/per)") // TODO: Mensagens de erro, sugestões de resposta e valores achados
+                window.alert("Jovem, ainda não sabemos a resposta para essa questão... (ERRO p2/per)") 
                 return ''
             }
             // h + all possible combinations
             if ((measureType1 == "h" && measureType2 == "area") || (measureType1 == "area" && measureType2 == "h")) {
-                window.alert("Jovem, ainda não sabemos a resposta para essa questão... (ERRO h/area)") // TODO: Mensagens de erro, sugestões de resposta e valores achados
+                window.alert("Jovem, ainda não sabemos a resposta para essa questão... (ERRO h/area)") 
                 return ''
             } if ((measureType1 == "h" && measureType2 == "per") || (measureType1 == "per" && measureType2 == "h")) {
-                window.alert("Jovem, ainda não sabemos a resposta para essa questão... (ERRO h/per)") // TODO: Mensagens de erro, sugestões de resposta e valores achados
+                window.alert("Jovem, ainda não sabemos a resposta para essa questão... (ERRO h/per)") 
                 return ''
             }
             // A + all possible combinations
             if ((measureType1 == "area" && measureType2 == "per") || (measureType1 == "per" && measureType2 == "area")) {
-                window.alert("Jovem, ainda não sabemos a resposta para essa questão... (ERRO area/per)") // TODO: Mensagens de erro, sugestões de resposta e valores achados
+                window.alert("Jovem, ainda não sabemos a resposta para essa questão... (ERRO area/per)") 
                 return ''
             }
             results.area = area(results.b, results.c, 0)
-            results.per = results.a + results.b + results.c
+            if (typeof(results.a + results.b + results.c) == 'number') {
+                results.per = results.a + results.b + results.c
+            }
+            else {
+                results.per = "Jovem, nem eu consegui fazer este cálculo!"
+            }
             results.click = true
             }
     }
