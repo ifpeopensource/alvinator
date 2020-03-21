@@ -7,6 +7,88 @@ body {
   background-color: #10af45;
 }
 
+@-webkit-keyframes blinkingSolved {
+  0% {
+    background-color: #10af45;
+  }
+  30% {
+    background-color: #048f32;
+  }
+  60% {
+    background-color: #10af45;
+  }
+  80% {
+    background-color: #048f32;
+  }
+}
+
+@keyframes blinkingSolved {
+  0% {
+    background-color: #10af45;
+  }
+  30% {
+    background-color: #048f32;
+  }
+  60% {
+    background-color: #10af45;
+  }
+  80% {
+    background-color: #048f32;
+  }
+}
+
+@-webkit-keyframes blinkingError {
+  0% {
+    background-color: #10af45;
+  }
+  30% {
+    background-color: #c7563a;
+  }
+  48% {
+    background-color: #10af45;
+  }
+  70% {
+    background-color: #c7563a;
+  }
+  100% {
+    background-color: #10af45;
+  }
+}
+
+@keyframes blinkingError {
+  0% {
+    background-color: #10af45;
+  }
+  30% {
+    background-color: #c7563a;
+  }
+  48% {
+    background-color: #10af45;
+  }
+  70% {
+    background-color: #c7563a;
+  }
+  100% {
+    background-color: #10af45;
+  }
+}
+
+.solvedAnimation {
+  -webkit-animation-name: blinkingSolved;
+          animation-name: blinkingSolved;
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s;
+  -webkit-transition: 1s;
+  transition: 1s;
+}
+
+.errorAnimation {
+  -webkit-animation-name: blinkingError;
+          animation-name: blinkingError;
+  -webkit-animation-duration: 3s;
+          animation-duration: 3s;
+}
+
 #header {
   font-family: 'Muli', sans-serif;
   font-style: italic;

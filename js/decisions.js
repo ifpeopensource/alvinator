@@ -105,9 +105,11 @@ export default function decisions() {
     function mainDecisions() {
 
         identifySelect()
+        document.getElementById("body").className = ""
 
         if ((measureType1 == measureType2) || (Number(inputMeasure1.value) == 0 || Number(inputMeasure2.value) == 0)) { // Checagem inicial dos dados
             window.alert("Coloque algo direito nesta merda jovem!")
+            document.getElementById("body").className = "errorAnimation"
         }
         else { // Sorry for so many "if's", unfortunately, it's not an AI ;-;
 
@@ -264,6 +266,7 @@ export default function decisions() {
                 results.per = "Jovem, nem eu consegui fazer este cálculo!"
             }
             results.click = true
+            document.getElementById("body").className = "solvedAnimation"
             }
     }
     mainDecisions()
