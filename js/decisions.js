@@ -106,6 +106,7 @@ export default function decisions() {
 
         identifySelect()
         document.getElementById("body").className = ""
+        document.getElementById("body").className = ""
 
         if ((measureType1 == measureType2) || (Number(inputMeasure1.value) == 0 || Number(inputMeasure2.value) == 0)) { // Checagem inicial dos dados
             window.alert("Coloque algo direito nesta merda jovem!")
