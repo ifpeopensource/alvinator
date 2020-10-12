@@ -32,12 +32,7 @@ A aplicação calcula os lados, alturas, projeções, área e perímetro do tri�
 
 ## :warning: Importante!
 
-1. Este projeto não tem, em nenhuma hipotése, o objetivo de servir como auxílio indevido para provas ou testes acadêmicos. O *alvinator!* surgiu para que os alunos pudessem conferir seus cálculos de forma mais fácil enquanto estivessem estudando.
-
-2. Quer contribuir? veja uma das [issues](https://github.com/fabiopapaiss/alvinator/issues) ou veja em mais detalhes como [como contribuir](https://github.com/fabiopapaiss/alvinator/blob/master/CONTRIBUTING.md).
-
-3. Antes participar e contribuir com o projeto, leia sempre nosso [código de conduta](https://github.com/fabiopapaiss/alvinator/blob/master/CODE_OF_CONDUCT.md)
-
+Este projeto não tem, em nenhuma hipotése, o objetivo de servir como auxílio indevido para provas ou testes acadêmicos. O *alvinator!* surgiu para que os alunos pudessem conferir seus cálculos de forma mais fácil enquanto estivessem estudando.
 
 ## :tada: **alvinator! 2.0**
 
@@ -46,7 +41,8 @@ O projeto está passando por uma grande reestruturação, então mudanças podem
 ## 🤝 Quer contribuir?
 
 Contribuições, issues e pedidos de novas funcionalidades são bem-vindos!<br /> Sinta-se livre para checar a [página de issues](https://github.com/fabiopapaiss/alvinator/issues). <br/>
-**Confira detalhes e informações importantes [aqui](./CONTRIBUTING.md)!**
+**Confira detalhes e informações importantes [aqui](./CONTRIBUTING.md)!** 
+<br />Antes participar e contribuir com o projeto, leia sempre nosso [código de conduta](https://github.com/fabiopapaiss/alvinator/blob/master/CODE_OF_CONDUCT.md)
 
 ## Gostou do projeto? 
 
