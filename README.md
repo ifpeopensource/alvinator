@@ -28,7 +28,7 @@ A aplicação calcula os lados, alturas, projeções, área e perímetro do tri�
 
 ## ✨ [Demo](https://fabiopapaiss.github.io/alvinator/)
 
-[Vídeo de demonstração](https://github.com/fabiopapaiss/alvinator/blob/master/media/alvinatorGif.gif)
+![Vídeo de demonstração](https://github.com/fabiopapaiss/alvinator/blob/master/media/alvinatorGif.gif)
 
 ## :warning: Importante!
 
