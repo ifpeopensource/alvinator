@@ -1,8 +1,22 @@
 # *alvinator!*
-### Site que resolve questões iniciais de Trigonometria em Triângulos Retângulos da matéria Matemática II, ministrada pelo professor Pedro Alvino.
+#### Site que resolve questões iniciais de Trigonometria em Triângulos Retângulos da matéria Matemática II, ministrada pelo professor Pedro Alvino.
 
-O assunto envolve Trigonometria e cálculos com o triângulo retângulo. O código em JS calcula os lados, alturas, projeções, área e perímetro do triângulo baseado em apenas dois valores dados pelo usuário (tudo client-side). O objetivo que outros alunos também possam usar o site e conferir suas respostas.
+O assunto envolve Trigonometria e cálculos com o triângulo retângulo. Calcula os lados, alturas, projeções, área e perímetro do triângulo baseado em apenas dois valores dados pelo usuário (tudo client-side).
 
+## Demo
 ![Vídeo de demonstração](https://github.com/fabiopapaiss/alvinator/blob/master/media/alvinatorGif.gif)
 
-Atualmente, o projeto está em fase inicial, com arquitetura um pouco confusa. Caso queira contribuir com o projeto, **veja um de nossos issues** ou **abra um issue** sinalizando problemas que você tenha encontrado! Vamos ficar felizes de receber seu feedback!
+## Informações importantes
+
+1. Este projeto não tem, em nenhuma hipotése, o objetivo de servir como auxílio indevido para provas ou testes acadêmicos. O *alvinator!* surgiu para que os alunos pudessem conferir seus cálculos de forma mais fácil enquanto estivessem estudando.
+
+2. Quer contribuir? veja uma das [issues](https://github.com/fabiopapaiss/alvinator/issues) ou veja em mais detalhes como [como contribuir](https://github.com/fabiopapaiss/alvinator/blob/master/CONTRIBUTING.md).
+
+3. Antes participar e contribuir com o projeto, leia sempre nosso [código de conduta](https://github.com/fabiopapaiss/alvinator/blob/master/CODE_OF_CONDUCT.md)
+
+
+## *alvinator! 2.0*
+
+O projeto está passando por uma grande reestruturação, então mudanças podem acontecer a todo momento! Fique atento às issues e commits para se situar. [Esta issue](https://github.com/fabiopapaiss/alvinator/issues/6) descreve os objetivos do *alvinator! 2.0*. Participe você também desta mudança!
+
+#### Gostou do projeto? Dê uma star e conte para seus colegas que também precisam de ajuda nos estudos!
