@@ -1,6 +1,6 @@
-<h1 align="center>
+<h1 align="center">
   <a target="blank" href="https://fabiopapaiss.github.io/alvinator/">
-    <img src="./logo.png" width="80%" alt="alvinator!" title="Acesse o alvinator!" />
+    <img src="./logo.png" width="50%" alt="alvinator!" title="Acesse o alvinator!" />
   </a>
 </h1>
 
