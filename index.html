@@ -1,42 +1,35 @@
 <!doctype html>
 <html lang="pt-BR">
-
-<head>
-    <meta charset="UTF-8">
-    <link rel='icon' href='media/fabicon.ico' type='image/x-icon'/>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">    <title>Alvinator!</title>
-    <link rel="stylesheet" href="styles/style.css">
-    <link href="https://fonts.googleapis.com/css?family=Muli:900,900i&display=swap&subset=latin-ext" 
-    rel="stylesheet">
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
-    rel="stylesheet">
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-159946267-1"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'UA-159946267-1');
-</script>
-</head>
-
-<body id = "body">
-    <a target = "_blank" href="https://github.com/fabiopapaiss/alvinator" class="github-corner" aria-label="View source on GitHub"><svg width="80" height="80" viewBox="0 0 250 250" style= "position: absolute; top: 0; border: 0; right: 0;" aria-hidden="true"><path d="M0,0 L115,115 L130,115 L142,142 L250,250 L250,0 Z"></path><path d="M128.3,109.0 C113.8,99.7 119.0,89.6 119.0,89.6 C122.0,82.7 120.5,78.6 120.5,78.6 C119.2,72.0 123.4,76.3 123.4,76.3 C127.3,80.9 125.5,87.3 125.5,87.3 C122.9,97.6 130.6,101.9 134.4,103.2" fill="currentColor" style="transform-origin: 130px 106px;" class="octo-arm"></path><path d="M115.0,115.0 C114.9,115.1 118.7,116.5 119.8,115.4 L133.7,101.6 C136.9,99.2 139.9,98.4 142.2,98.6 C133.8,88.0 127.5,74.4 143.8,58.0 C148.5,53.4 154.0,51.2 159.7,51.0 C160.3,49.4 163.2,43.6 171.4,40.1 C171.4,40.1 176.1,42.5 178.8,56.2 C183.1,58.6 187.2,61.8 190.9,65.4 C194.5,69.0 197.7,73.2 200.1,77.6 C213.8,80.2 216.3,84.9 216.3,84.9 C212.7,93.1 206.9,96.0 205.4,96.6 C205.1,102.4 203.0,107.8 198.3,112.5 C181.9,128.9 168.3,122.5 157.7,114.1 C157.9,116.9 156.7,120.9 152.7,124.9 L141.0,136.5 C139.8,137.7 141.6,141.9 141.8,141.8 Z" fill="currentColor" class="octo-body"></path></svg></a><style>.github-corner:hover .octo-arm{animation:octocat-wave 560ms ease-in-out}@keyframes octocat-wave{0%,100%{transform:rotate(0)}20%,60%{transform:rotate(-25deg)}40%,80%{transform:rotate(10deg)}}@media (max-width:500px){.github-corner:hover .octo-arm{animation:none}.github-corner .octo-arm{animation:octocat-wave 560ms ease-in-out}}</style>
-    <header id="header">
-        <h1 id="ola">Olá, Jovem!</h1>
-        <h2 id="alvinator">Este é o <span style = "font-style: italic;">alvinator!</span></h2>
-    </header>
-    <section id="bigContainer">
-        <section id="addMeasures">
+    <head>
+        <title>Alvinator!</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge"> 
+        <link href="media/fabicon.ico" rel="icon" type="image/x-icon">
+        <link href="styles/style.css" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Muli:900,900i&display=swap&subset=latin-ext" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    </head>
+    <body id="body">
+        <header id="header">
+            <div>
+                <a class="github-corner" target = "_blank" href="https://github.com/fabiopapaiss/alvinator" aria-label="View source on GitHub">
+                    <svg width="80" height="80" viewBox="0 0 250 250" aria-hidden="true">
+                        <path d="M0,0 L115,115 L130,115 L142,142 L250,250 L250,0 Z"></path>
+                        <path d="M128.3,109.0 C113.8,99.7 119.0,89.6 119.0,89.6 C122.0,82.7 120.5,78.6 120.5,78.6 C119.2,72.0 123.4,76.3 123.4,76.3 C127.3,80.9 125.5,87.3 125.5,87.3 C122.9,97.6 130.6,101.9 134.4,103.2" fill="currentColor" style="transform-origin: 130px 106px;" class="octo-arm"></path>
+                        <path d="M115.0,115.0 C114.9,115.1 118.7,116.5 119.8,115.4 L133.7,101.6 C136.9,99.2 139.9,98.4 142.2,98.6 C133.8,88.0 127.5,74.4 143.8,58.0 C148.5,53.4 154.0,51.2 159.7,51.0 C160.3,49.4 163.2,43.6 171.4,40.1 C171.4,40.1 176.1,42.5 178.8,56.2 C183.1,58.6 187.2,61.8 190.9,65.4 C194.5,69.0 197.7,73.2 200.1,77.6 C213.8,80.2 216.3,84.9 216.3,84.9 C212.7,93.1 206.9,96.0 205.4,96.6 C205.1,102.4 203.0,107.8 198.3,112.5 C181.9,128.9 168.3,122.5 157.7,114.1 C157.9,116.9 156.7,120.9 152.7,124.9 L141.0,136.5 C139.8,137.7 141.6,141.9 141.8,141.8 Z" fill="currentColor" class="octo-body"></path>
+                    </svg>
+                </a>
+            </div>
+            <h1 id="ola">Olá, Jovem!</h1>
+            <h2 id="alvinator">Este é o alvinator!</h2>
+        </header>
+        <section id="bigContainer">
             <h3>Primeiro, insira os valores que você tem:</h3>
-
-            <div class = "inputs">
-                <select name="measureTypes" id="measureTypes1" class="measureTypes">
-                    <option value = "" disabled selected hidden>Escolha o Tipo 1</option style="color: gray">
-                    <option>a (Hipotenusa)</option>
+            <div class="inputs">
+                <select class="measureTypes" id="measureTypes1" name="measureTypes">
+                    <option hidden>Escolha o Tipo 1</option>
+                    <option>a (Hipotenusa)</option>      
                     <option>b (Cateto B)</option>
                     <option>c (Cateto C)</option>
                     <option>p1 (Projeção 1)</option>
@@ -45,11 +38,11 @@
                     <option>A (Área)</option>
                     <option>2p (Perímetro)</option>
                 </select>
-                <input placeholder = "Valor 1" type="number" min = 0 id="inputMeasure1" class="inputNumbers">
+                <input class="inputNumbers" id="inputMeasure1" type="number" min=0 placeholder="Valor 1">
             </div>
-            <div class = "inputs">
-                <select name="measureTypes" id="measureTypes2" class="measureTypes">
-                    <option value = "" disabled selected hidden>Escolha o Tipo 2</option>
+            <div class="inputs">
+                <select class="measureTypes" id="measureTypes2" name="measureTypes">
+                    <option hidden>Escolha o Tipo 2</option>
                     <option>a (Hipotenusa)</option>
                     <option>b (Cateto B)</option>
                     <option>c (Cateto C)</option>
@@ -59,31 +52,33 @@
                     <option>A (Área)</option> 
                     <option>2p (Perímetro)</option>
                 </select>
-                <input placeholder = "Valor 2" type="number" min = 0 id="inputMeasure2" class="inputNumbers">
+                <input class="inputNumbers" id="inputMeasure2" type="number" min=0 placeholder="Valor 2">
+            </div>    
+            <input id="inputCalculate" type="button" value="Calcular!">
+            <p>
+                <button id="infoButton"><i class="material-icons">help</i></button>
+            </p>
+        </section>
+        <section id="addMeasures"></section>
+            <div class="infoButtonArea" id="infoButtonAreaOff"> 
+                <div id="howWorks">
+                    <b class="important">Como o alvinator funciona?</b>
+                    <p>Basta colocar os tipos e valores de duas medidas que você tiver e o Alvinator fará todo o resto! Jovem, depois disto, seu estudo se tornará <span class="important">altamente</span> eficiente!</p>
+                    <b class="important">Veja um exemplo de um triângulo:</b>
+                    <img src="media/AlvinatorTriangle.png" alt="Exemplo das medidas de um triângulo">
+                </div>
+            </div>
+            <div class="results" id="resultsOff">
+                <p id="a">O valor da Hipotenusa (a) é: </p>
+                <p id="b">O valor do Cateto b é: </p>
+                <p id="c">O valor do Cateto c é: </p>
+                <p id="p1">O valor da projeção p1 é: </p>
+                <p id="p2">O valor da projeção p2 é: </p>
+                <p id="h">O valor da altura (h) é: </p>
+                <p id="area">O valor da área (A) é: </p>
+                <p id="per">O valor do perímetro (2p) é: </p>
             </div>
         </section>
-        <!--<button id = "inputCalculate" onclick="mainFunction()" ><strong>Calcular!</strong></button>-->
-        <input type="button" value="Calcular!" id = "inputCalculate">
-        <p><button id = "infoButton"><i class="material-icons">help</i></button></p>
-    </section>
-    <div id = "infoButtonAreaOff" class = "infoButtonArea"> 
-        <div id = "howWorks">
-            <b class = "important">Como o alvinator funciona?</b>
-            <p>Basta colocar os tipos e valores de duas medidas que você tiver e o Alvinator fará todo o resto! Jovem, depois disto, seu estudo se tornará <span class = "important">altamente</span> eficiente!</p>
-            <b class = "important">Veja um exemplo de um triângulo:</b>
-            <img src="media/AlvinatorTriangle.png" alt="Exemplo das medidas de um triângulo">
-        </div>
-    </div>
-    <div id = "resultsOff" class = "results">
-        <p id = "a">O valor da Hipotenusa (a) é: </p>
-        <p id = "b">O valor do Cateto b é: </p>
-        <p id = "c">O valor do Cateto c é: </p>
-        <p id = "p1">O valor da projeção p1 é: </p>
-        <p id = "p2">O valor da projeção p2 é: </p>
-        <p id = "h">O valor da altura (h) é: </p>
-        <p id = "area">O valor da área (A) é: </p>
-        <p id = "per">O valor do perímetro (2p) é: </p>
-    </div>
-    <script type = "module" src="js/main.js"></script> <!--"type = module" permits the js document import other js  files-->
-</body>
+        <script type="module" src="js/main.js"></script> 
+    </body>
 </html>
