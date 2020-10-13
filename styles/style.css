@@ -7,6 +7,38 @@ body {
   background-color: #10af45;
 }
 
+.github-corner:hover .octo-arm {
+  animation:octocat-wave 560ms ease-in-out;
+}
+
+.github-corner svg {
+  position: absolute; 
+  top: 0; 
+  border: 0; 
+  right: 0;
+}
+
+@keyframes octocat-wave {
+  0%, 100% {
+    transform:rotate(0);
+  }
+  20%, 60% {
+    transform:rotate(-25deg);
+  }
+  40%, 80% {
+    transform:rotate(10deg);
+  }
+}
+
+@media (max-width:500px) {
+  .github-corner:hover .octo-arm {
+    animation:none;
+  } 
+  .github-corner .octo-arm {
+    animation:octocat-wave 560ms ease-in-out;
+  }
+}
+
 @-webkit-keyframes blinkingSolved {
   0% {
     background-color: #10af45;
