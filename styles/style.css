@@ -1,99 +1,110 @@
-.github-corner {
-  fill: #fff;
-  color: #10af45;
-}
 
 body {
   background-color: #10af45;
 }
 
-@-webkit-keyframes blinkingSolved {
+.solvedAnimation {
+  animation-name: blinkingSolved;
+  animation-duration: 2s;
+  transition: 1s;
+  animation-name: blinkingSolved;
+  animation-duration: 2s;
+  transition: 1s;
+}
+
+.errorAnimation {
+  animation-name: blinkingError;
+  animation-duration: 3s;
+  animation-name: blinkingError;
+  animation-duration: 3s;
+}
+
+@keyframes blinkingSolved {
   0% {
-    background-color: #10af45;
+      background-color: #10af45;
   }
+
   30% {
-    background-color: #048f32;
+      background-color: #048f32;
   }
+
   60% {
-    background-color: #10af45;
+      background-color: #10af45;
   }
+
   80% {
-    background-color: #048f32;
+      background-color: #048f32;
   }
 }
 
 @keyframes blinkingSolved {
   0% {
-    background-color: #10af45;
+      background-color: #10af45;
   }
-  30% {
-    background-color: #048f32;
-  }
-  60% {
-    background-color: #10af45;
-  }
-  80% {
-    background-color: #048f32;
-  }
-}
 
-@-webkit-keyframes blinkingError {
-  0% {
-    background-color: #10af45;
-  }
   30% {
-    background-color: #c7563a;
+      background-color: #048f32;
   }
-  48% {
-    background-color: #10af45;
+
+  60% {
+      background-color: #10af45;
   }
-  70% {
-    background-color: #c7563a;
-  }
-  100% {
-    background-color: #10af45;
+
+  80% {
+      background-color: #048f32;
   }
 }
 
 @keyframes blinkingError {
   0% {
-    background-color: #10af45;
+      background-color: #10af45;
   }
+
   30% {
-    background-color: #c7563a;
+      background-color: #c7563a;
   }
+
   48% {
-    background-color: #10af45;
+      background-color: #10af45;
   }
+
   70% {
-    background-color: #c7563a;
+      background-color: #c7563a;
   }
+
   100% {
-    background-color: #10af45;
+      background-color: #10af45;
   }
 }
 
-.solvedAnimation {
-  -webkit-animation-name: blinkingSolved;
-          animation-name: blinkingSolved;
-  -webkit-animation-duration: 2s;
-          animation-duration: 2s;
-  -webkit-transition: 1s;
-  transition: 1s;
+
+@keyframes blinkingError {
+  0% {
+      background-color: #10af45;
+  }
+
+  30% {
+      background-color: #c7563a;
+  }
+
+  48% {
+      background-color: #10af45;
+  }
+
+  70% {
+      background-color: #c7563a;
+  }
+
+  100% {
+      background-color: #10af45;
+  }
 }
 
-.errorAnimation {
-  -webkit-animation-name: blinkingError;
-          animation-name: blinkingError;
-  -webkit-animation-duration: 3s;
-          animation-duration: 3s;
-}
 
 #header {
   font-family: 'Muli', sans-serif;
   font-style: italic;
   text-align: center;
-  color: #FFF;
 }
 
 #ola {
@@ -124,8 +135,7 @@ footer {
   height: 200px;
   margin: auto;
   border-radius: 15px;
-  -webkit-box-shadow: 0pt 0pt 15pt rgba(0, 0, 0, 0.25);
-          box-shadow: 0pt 0pt 15pt rgba(0, 0, 0, 0.25);
+  box-shadow: 0pt 0pt 15pt rgba(0, 0, 0, 0.25);
 }
 
 h3 {
@@ -165,7 +175,6 @@ h3 {
   border-radius: 8px;
   padding: 18px 130px;
   margin-top: 15px;
-  -webkit-transition: 0.8s;
   transition: 0.8s;
   background-color: white;
   border: 1.5pt solid #10af45;
@@ -177,8 +186,7 @@ h3 {
   background-color: #10af45;
   border: 1.5pt solid #10af45;
   color: #FFF;
-  -webkit-box-shadow: 1.5pt 1pt 10pt rgba(0, 0, 0, 0.35);
-          box-shadow: 1.5pt 1pt 10pt rgba(0, 0, 0, 0.35);
+  box-shadow: 1.5pt 1pt 10pt rgba(0, 0, 0, 0.35);
 }
 
 #infoButton {
@@ -192,7 +200,6 @@ h3 {
 }
 
 #infoButton :hover {
-  -webkit-transition: 1s;
   transition: 1s;
   color: #0e7a32;
 }
@@ -205,15 +212,13 @@ h3 {
   margin: auto;
   margin-top: 10px;
   border-radius: 15px;
-  -webkit-transition: 0.9s;
   transition: 0.9s;
-  -webkit-box-shadow: 0pt 0pt 15pt rgba(0, 0, 0, 0.25);
-          box-shadow: 0pt 0pt 15pt rgba(0, 0, 0, 0.25);
+  box-shadow: 0pt 0pt 15pt rgba(0, 0, 0, 0.25);
 }
 
+
 #infoButtonAreaOn #howWorks {
-  -webkit-transition-delay: 0.65s;
-          transition-delay: 0.65s;
+  transition-delay: 0.65s;
   font-family: 'Muli', sans-serif;
   text-align: center;
   color: #8f8f8f;
@@ -230,7 +235,6 @@ h3 {
   height: 0;
   margin: auto;
   margin-top: 10px;
-  -webkit-transition: 0.9s;
   transition: 0.9s;
 }
 
@@ -251,11 +255,8 @@ h3 {
   margin-top: 10px;
   margin-bottom: 10px;
   border-radius: 15px;
-  -webkit-box-shadow: 0pt 0pt 15pt rgba(0, 0, 0, 0.25);
-          box-shadow: 0pt 0pt 15pt rgba(0, 0, 0, 0.25);
-  -webkit-transition-delay: 0.65s;
-          transition-delay: 0.65s;
-  -webkit-transition: 0.9s;
+  box-shadow: 0pt 0pt 15pt rgba(0, 0, 0, 0.25);
+  transition-delay: 0.65s;
   transition: 0.9s;
 }
 
@@ -271,62 +272,73 @@ h3 {
 
 @media only screen and (max-width: 600px) {
   #ola {
-    font-size: 30px;
+      font-size: 30px;
   }
+
   #alvinator {
-    font-size: 15px;
-    padding-top: 10px;
+      font-size: 15px;
+      padding-top: 10px;
   }
+
   #bigContainer {
-    padding: 60px;
-    width: 250px;
-    height: 280px;
+      padding: 60px;
+      width: 250px;
+      height: 280px;
   }
+
   .inputs {
-    margin-left: -10px;
+      margin-left: -10px;
   }
+
   .measureTypes {
-    padding: 6px 18px;
-    width: 213px;
+      padding: 6px 18px;
+      width: 213px;
   }
+
   .inputNumbers {
-    padding: 6px 18px;
+      padding: 6px 18px;
   }
+
   #inputCalculate {
-    padding: 15px 50px;
-    -webkit-transition: 0.8s;
-    transition: 0.8s;
-    margin: auto;
-    margin-top: 10px;
+      padding: 15px 50px;
+      transition: 0.8s;
+      transition: 0.8s;
+      margin: auto;
+      margin-top: 10px;
   }
+
   #infoButton {
-    margin-right: -250pt;
-    margin-top: -10px;
+      margin-right: -250pt;
+      margin-top: -10px;
   }
+
   #infoButtonAreaOn {
-    padding: 50px;
-    width: 270px;
-    height: 350px;
-    margin: auto;
-    margin-top: 10px;
+      padding: 50px;
+      width: 270px;
+      height: 350px;
+      margin: auto;
+      margin-top: 10px;
   }
+
   #infoButtonAreaOff {
-    visibility: hidden;
-    padding: 20px;
-    width: 270px;
-    margin: auto;
-    margin-top: 10px;
+      visibility: hidden;
+      padding: 20px;
+      width: 270px;
+      margin: auto;
+      margin-top: 10px;
   }
+
   #resultsOn {
-    padding: 50px;
-    width: 270px;
-    margin: auto;
-    margin-top: 10px;
-    margin-bottom: 10px;
+      padding: 50px;
+      width: 270px;
+      margin: auto;
+      margin-top: 10px;
+      margin-bottom: 10px;
   }
+
   #resultsOff {
-    padding: 0px 50px;
-    width: 270px;
-    visibility: hidden;
+      padding: 0px 50px;
+      width: 270px;
+      visibility: hidden;
   }
 }
