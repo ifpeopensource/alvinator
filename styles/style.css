@@ -24,21 +24,35 @@ body {
   animation-duration: 3s;
 }
 
-@keyframes blinkingSolved {
-  0% {
-      background-color: #10af45;
-  }
+.github-corner:hover .octo-arm {
+  animation:octocat-wave 560ms ease-in-out;
+}
 
-  30% {
-      background-color: #048f32;
-  }
+.github-corner svg {
+  position: absolute; 
+  top: 0; 
+  border: 0; 
+  right: 0;
+}
 
-  60% {
-      background-color: #10af45;
+@keyframes octocat-wave {
+  0%, 100% {
+    transform:rotate(0);
   }
+  20%, 60% {
+    transform:rotate(-25deg);
+  }
+  40%, 80% {
+    transform:rotate(10deg);
+  }
+}
 
-  80% {
-      background-color: #048f32;
+@media (max-width:500px) {
+  .github-corner:hover .octo-arm {
+    animation:none;
+  } 
+  .github-corner .octo-arm {
+    animation:octocat-wave 560ms ease-in-out;
   }
 }
 
@@ -59,29 +73,6 @@ body {
       background-color: #048f32;
   }
 }
-
-@keyframes blinkingError {
-  0% {
-      background-color: #10af45;
-  }
-
-  30% {
-      background-color: #c7563a;
-  }
-
-  48% {
-      background-color: #10af45;
-  }
-
-  70% {
-      background-color: #c7563a;
-  }
-
-  100% {
-      background-color: #10af45;
-  }
-}
-
 
 @keyframes blinkingError {
   0% {
@@ -346,4 +337,3 @@ h3 {
       width: 270px;
       visibility: hidden;
   }
-}
