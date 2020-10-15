@@ -3,6 +3,11 @@ body {
   background-color: #10af45;
 }
 
+.github-corner {
+  fill: #fff;
+  color: #10af45;
+}
+
 .solvedAnimation {
   animation-name: blinkingSolved;
   animation-duration: 2s;
