@@ -1,9 +1,7 @@
-# How does the mathFunctions work
+# Como as funções mathFunctions funcionam
 
- All the functions works as equations that we use in the problem solving with right triangles
+ Todas elas são funções que representam equações usadas nos cálculos de problemas com o triângulo retângulo.
 
- Probably, in most cases, each function represents one equation, but sometimes a function is just another form of that same equation
+ Cada funções representa apenas uma equação e, em alguns casos, suas variações.
 
- They're responsable for identifying the value that's missing and returning that missing value. 
-
- Let's go!
+ Elas são responsáveis por identificar o valor que está faltando (desconhecido) e retornar o resultado encontrado para ele.  

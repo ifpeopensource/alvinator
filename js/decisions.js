@@ -106,13 +106,12 @@ export default function decisions() {
 
         identifySelect()
         document.getElementById("body").className = ""
-        document.getElementById("body").className = ""
 
         if ((measureType1 == measureType2) || (Number(inputMeasure1.value) == 0 || Number(inputMeasure2.value) == 0)) { // Checagem inicial dos dados
             window.alert("Coloque algo direito nesta merda jovem!")
             document.getElementById("body").className = "errorAnimation"
         }
-        else { // Sorry for so many "if's", unfortunately, it's not an AI ;-;
+        else { //So many "if's"... Unfortunately, it's not an AI ;-;
 
             //Normal Pythagoras block (a,b,c possible combinations)
             if ((measureType1 == "b" && measureType2 == "c") || (measureType1 == "c" && measureType2 == "b")) {
@@ -205,7 +204,6 @@ export default function decisions() {
                 return ''
             } if ((measureType1 == "b" && measureType2 == "per") || (measureType1 == "per" && measureType2 == "b")) {
                 window.alert("Jovem, ainda não sabemos a resposta para essa questão... (ERRO b/per)") 
-                //TODO TENTAR ACHAR RESPOSTA
             }
             // c + all options possible combinations
             if ((measureType1 == "c" && measureType2 == "p1") || (measureType1 == "p1" && measureType2 == "c")) {

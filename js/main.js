@@ -3,9 +3,6 @@ import decisions from './decisions.js'
 let inputMeasure2 = document.getElementById("inputMeasure2")
 let inputMeasure1 = document.getElementById("inputMeasure1")
 
-let bigContainer = document.getElementById('bigContainer')
-var body = document.getElementsByTagName("body")[0]
-
 let resultsButton = document.getElementById('inputCalculate')
 let resultsButtonArea = document.getElementsByClassName('results')
 
@@ -44,8 +41,6 @@ function resultsButtonDisplay() {
     h.innerHTML = "O valor da altura (h) é: "
     area.innerHTML = "O valor da área (A) é: " 
     per.innerHTML = "O valor do perímetro (2p) é: "
-    console.log(results)
-
 
     if (results.click == true) {
         resultsButtonArea[0].setAttribute("id", "resultsOn")
