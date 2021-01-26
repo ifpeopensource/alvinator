@@ -1,6 +1,6 @@
 <h1 align="center">
   <a target="blank" href="https://fabiopapaiss.github.io/alvinator/">
-    <img src="./logo.png" width="50%" alt="alvinator!" title="Acesse o alvinator!" />
+    <img src="./docs/media/logo.png" width="50%" alt="alvinator!" title="Acesse o alvinator!" />
   </a>
 </h1>
 
@@ -28,7 +28,7 @@ A aplicação calcula os lados, alturas, projeções, área e perímetro do tri�
 
 ## ✨ [Demo](https://fabiopapaiss.github.io/alvinator/)
 
-![Vídeo de demonstração](https://github.com/fabiopapaiss/alvinator/blob/master/media/alvinatorGif.gif)
+![Vídeo de demonstração](https://github.com/fabiopapaiss/alvinator/blob/master/docs/media/alvinatorGif.gif)
 
 ## :warning: Importante!
 
@@ -41,7 +41,7 @@ O projeto está passando por uma grande reestruturação, então mudanças podem
 ## 🤝 Quer contribuir?
 
 Contribuições, issues e pedidos de novas funcionalidades são bem-vindos!<br /> Sinta-se livre para checar a [página de issues](https://github.com/fabiopapaiss/alvinator/issues). <br/>
-**Confira detalhes e informações importantes [aqui](./CONTRIBUTING.md)!** 
+**Confira detalhes e informações importantes [aqui](./docs/CONTRIBUTING.md)!** 
 <br />Antes participar e contribuir com o projeto, leia sempre nosso [código de conduta](https://github.com/fabiopapaiss/alvinator/blob/master/CODE_OF_CONDUCT.md)
 
 ## Gostou do projeto? 
